@@ -1,7 +1,9 @@
 import i18next from "i18next";
+import { en } from "./en";
+import { es } from "./es";
 
 
-i18next({
+i18next.init({
     interpolation: {
         escapeValue: false,
     },
@@ -9,10 +11,10 @@ i18next({
     lng: 'es',
     resources: {
         en: {
-            translation: eng,
+            translation: en,
         },
         es: {
-            translation: esp,
+            translation: es,
         },
     },
 });
