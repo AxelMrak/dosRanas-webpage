@@ -1,0 +1,14 @@
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+.d-block {
+  filter: brightness(0.4);
+}
+
+.carousel-caption {
+  font-family: "Open Sans", sans-serif;
+  word-wrap: break-word;
+  position: relative;
+  top: 30%;
+  left: 50%;
+  font-size: 5rem;
+}/*# sourceMappingURL=GalleryStyles.css.map */
