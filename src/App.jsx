@@ -10,6 +10,7 @@ function App() {
 
   return (
     <div className="App">
+      <a className='unit-list' href="/en/">en</a>
       <Router>
         <header className="Head">
           <img src={logo} width='150' alt="Logo de la productora" />
@@ -18,6 +19,7 @@ function App() {
               <Link className='unit-list' to="/servicios">{i18next.t('servicios')}</Link>
               <Link className='unit-list' to="/staff">{i18next.t('staff')}</Link>
               <Link className='unit-list' to="/contacto">{i18next.t('contacto')}</Link>
+              
           </nav>
         </header>
         <Routes>

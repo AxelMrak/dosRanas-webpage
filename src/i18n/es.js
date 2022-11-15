@@ -1,4 +1,4 @@
-export const es = {
+export const esp = {
     servicios: 'Servicios',
     staff: 'Staff',
     contacto: 'Contacto',
