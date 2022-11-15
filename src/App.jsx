@@ -20,8 +20,9 @@ function App() {
             <Link className='unit-list' to="/servicios">{t("header.services")}</Link>
             <Link className='unit-list' to="/staff">{t("header.staff")}</Link>
             <Link className='unit-list' to="/contacto">{t("header.contact")}</Link>
+            <img src={i18n.language === 'es' ? spanish : english} onClick={i18n.language === 'es' ? () => i18n.changeLanguage("en") : () => i18n.changeLanguage("es")} />
           </nav>
-          <img src={i18n.language === 'es' ? spanish : english} onClick={i18n.language === 'es' ? () => i18n.changeLanguage("en") : () => i18n.changeLanguage("es")} />
+          
         </header>
         <Routes>
           {/* HomePage */}

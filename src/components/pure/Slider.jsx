@@ -1,13 +1,16 @@
 import React from 'react';
-import '../../styles/GalleryStyles/GalleryStyles.css';
-import vid1 from '../../assets/videos/mainVideo-hd.gif'
-import vid2 from '../../assets/videos/mainVideo2-hd.gif'
-import vid3 from '../../assets/videos/mainVideo3-hd.gif'
-import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
+import '../../styles/CarouselStyles/GalleryStyles.css';
+import vid1 from '../../assets/gifs/mainVideo-hd.gif';
+import vid2 from '../../assets/gifs/mainVideo2-hd.gif';
+import vid3 from '../../assets/gifs/mainVideo3-hd.gif';
 
+/**
+ * TODO: Buscar videos de iguales medidas o tamaños para evitar redimension de carousel.
+ */
 
 function Slider() {
-    
+    const { t, i18n } = useTranslation("global");
     return (
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
             <div className="carousel-indicators">
@@ -19,8 +22,8 @@ function Slider() {
                 <div className="carousel-item active">
                     <img src={vid1} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
-                        <p>Dos Ranas</p>
-                        <p>productora</p>
+                        <p>{t("slider.title1")}</p>
+                        <p>{t("slider.text1")}</p>
                     </div>
                 </div>
                 <div className="carousel-item">
@@ -28,8 +31,8 @@ function Slider() {
                     <div className="carousel-caption d-none d-md-block">
 
                         <div className='Carrousell-subItems'>
-                            <p>{i18next.t('servicios')}</p>
-                            <p className='P-carousell'>But also the leap electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>{t("slider.title2")}</p>
+                            <p className='P-carousell'>{t("slider.text2")}</p>
                         </div>
 
                     </div>
@@ -38,8 +41,8 @@ function Slider() {
                     <img src={vid3} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                         <div className='Carrousell-subItems'>
-                            <p>{i18next.t('staff')}</p>
-                            <p className='P-carousell'>But also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            <p>{t("slider.title3")}</p>
+                            <p className='P-carousell'>{t("slider.text3")}</p>
                         </div>
 
                     </div>
@@ -54,7 +57,7 @@ function Slider() {
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
-    )
-}
+    );
+};
 
-export default Slider
+export default Slider;

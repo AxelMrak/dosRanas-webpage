@@ -5,9 +5,9 @@ import Slider from '../pure/Slider';
 
 function Main() {
   return (
-    <div className='main-container'>
+    <section className='main-container'>
       <Slider/>
-    </div>
+    </section>
   )
 }
 

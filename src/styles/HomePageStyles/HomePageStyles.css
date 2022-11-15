@@ -1,1 +1,5 @@
-/*# sourceMappingURL=HomePageStyles.css.map */
+.home-main-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5rem;
+}/*# sourceMappingURL=HomePageStyles.css.map */
