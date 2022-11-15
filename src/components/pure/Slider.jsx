@@ -7,7 +7,7 @@ import i18next from 'i18next';
 
 
 function Slider() {
-
+    
     return (
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
             <div className="carousel-indicators">
@@ -20,16 +20,18 @@ function Slider() {
                     <img src={vid1} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
                         <p>Dos Ranas</p>
-                        <p>{i18next.t('productora')}</p>
+                        <p>productora</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src={vid2} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
+
                         <div className='Carrousell-subItems'>
                             <p>{i18next.t('servicios')}</p>
                             <p className='P-carousell'>But also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
+
                     </div>
                 </div>
                 <div className="carousel-item">
@@ -39,6 +41,7 @@ function Slider() {
                             <p>{i18next.t('staff')}</p>
                             <p className='P-carousell'>But also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                         </div>
+
                     </div>
                 </div>
             </div>
