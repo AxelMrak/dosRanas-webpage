@@ -1,6 +1,8 @@
 import React from 'react';
 import '../../styles/GalleryStyles/GalleryStyles.css';
 import vid1 from '../../assets/videos/mainVideo-hd.gif'
+import vid2 from '../../assets/videos/mainVideo2-hd.gif'
+import vid3 from '../../assets/videos/mainVideo3-hd.gif'
 import i18next from 'i18next';
 
 
@@ -22,17 +24,21 @@ function Slider() {
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={vid1} className="d-block w-100" alt="..." />
+                    <img src={vid2} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
-                        <p>Dos Ranas</p>
-                        <p>{i18next.t('productora')}</p>
+                        <div className='Carrousell-subItems'>
+                            <p>{i18next.t('servicios')}</p>
+                            <p className='P-carousell'>But also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
                     </div>
                 </div>
                 <div className="carousel-item">
-                    <img src={vid1} className="d-block w-100" alt="..." />
+                    <img src={vid3} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-none d-md-block">
-                        <p>Dos Ranas </p>
-                        <p>{i18next.t('productora')}</p>
+                        <div className='Carrousell-subItems'>
+                            <p>{i18next.t('staff')}</p>
+                            <p className='P-carousell'>But also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        </div>
                     </div>
                 </div>
             </div>

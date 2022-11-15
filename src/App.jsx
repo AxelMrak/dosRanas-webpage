@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <a className='unit-list' href="/en/">en</a>
+
       <Router>
         <header className="Head">
           <img src={logo} width='150' alt="Logo de la productora" />
