@@ -2,12 +2,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ImageGrid } from 'react-fb-image-video-grid';
 import '../../styles/JobsStyles/OurJobsStyles.css';
-import vid1 from '../../assets/gifs/aboutUs-1.gif';
-import vid2 from '../../assets/gifs/aboutUs-2.gif';
-import vid3 from '../../assets/gifs/aboutUs-3.gif';
-import vid4 from '../../assets/gifs/aboutUs-4.gif';
-import vid5 from '../../assets/gifs/aboutUs-5.gif';
-import vid6 from '../../assets/gifs/aboutUs-6.gif';
+import Img3 from '../../assets/Imagenes/aboutUs.jpg';
+import Img2 from '../../assets/Imagenes/aboutUs2.jpg';
+import Img1 from '../../assets/Imagenes/aboutUs3.jpg';
 
 
 function OurJobs() {
@@ -18,12 +15,9 @@ function OurJobs() {
     <section className='jobs-main-container'>
         <h2>{t("ourJobs.title")}</h2>
           <ImageGrid className= "ImageGrid">
-            <img className='video' src={vid1}  />
-            <img className='video' src={vid5}  />
-            <img className='video' src={vid2}  />
-            <img className='video' src={vid4}  />
-            <img className='video' src={vid3}  />
-            {/*<img className='video' src={vid6}  />*/}
+            <img className='imagenes-clientes' src={Img1} />
+            <img className='imagenes-clientes' src={Img2} />
+            <img className='imagenes-clientes' src={Img3} />
           </ImageGrid>
     </section>
   )
