@@ -2,9 +2,9 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { ImageGrid } from 'react-fb-image-video-grid';
 import '../../styles/JobsStyles/OurJobsStyles.css';
-import Img3 from '../../assets/Imagenes/aboutUs.jpg';
-import Img2 from '../../assets/Imagenes/aboutUs2.jpg';
-import Img1 from '../../assets/Imagenes/aboutUs3.jpg';
+import Img3 from '../../assets/Imagenes/AboutUs.jpg';
+import Img2 from '../../assets/Imagenes/AboutUs2.jpg';
+import Img1 from '../../assets/Imagenes/AboutUs3.jpg';
 
 
 function OurJobs() {
