@@ -4,6 +4,7 @@ import About from '../../components/container/About';
 import Main from '../../components/container/Main';
 import OurJobs from '../../components/container/OurJobs';
 import Instagram from '../../components/container/Instagram';
+import ArtistsContainer from '../../components/container/ArtistsContainer';
 
 function HomePage() {
 
@@ -13,6 +14,7 @@ function HomePage() {
         <About/>
         <OurJobs/>
         <Instagram/>
+        <ArtistsContainer/>
     </div>
   )
 }
