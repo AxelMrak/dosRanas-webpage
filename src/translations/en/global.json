@@ -18,5 +18,9 @@
 	},
 	"ourJobs": {
 		"title": "Our jobs"
+	},
+	"artists": {
+		"title": "Artists",
+		"btn": "Watch video"
 	}
 }
