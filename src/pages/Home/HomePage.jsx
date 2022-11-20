@@ -1,5 +1,8 @@
+// Importaciones por defecto
 import React from 'react';
+// Importaciones de estilos
 import '../../styles/HomePageStyles/HomePageStyles.css';
+// Importaciones de componentes
 import About from '../../components/container/About';
 import Main from '../../components/container/Main';
 import OurJobs from '../../components/container/OurJobs';
@@ -7,7 +10,6 @@ import Instagram from '../../components/container/Instagram';
 import ArtistsContainer from '../../components/container/ArtistsContainer';
 
 function HomePage() {
-
   return (
     <div className='home-main-container'>
         <Main/>

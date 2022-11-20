@@ -1,6 +1,10 @@
+// Importaciones por defecto
 import React from 'react';
+// Importaciones de dependencias
 import { useTranslation } from 'react-i18next';
+// Importaciones de estilos
 import '../../styles/CarouselStyles/GalleryStyles.css';
+// Importaciones de gifs
 import vid1 from '../../assets/gifs/mainVideo-hd.gif';
 import vid2 from '../../assets/gifs/mainVideo2-hd.gif';
 import vid3 from '../../assets/gifs/mainVideo3-hd.gif';
@@ -9,8 +13,11 @@ import vid3 from '../../assets/gifs/mainVideo3-hd.gif';
  * TODO: Buscar videos de iguales medidas o tamaños para evitar redimension de carousel.
  */
 
+// Carousel de bootstrap para main section
 function Slider() {
+    // Texto de traduccion
     const { t, i18n } = useTranslation("global");
+
     return (
         <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
             <div className="carousel-indicators">

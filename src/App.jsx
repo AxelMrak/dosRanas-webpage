@@ -1,29 +1,17 @@
-import './styles/AppStyles/App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+// Importaciones por defecto
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// Importaciones de paginas
 import HomePage from './pages/Home/HomePage';
-import logo from './assets/Logo provisorio.svg';
-import { useTranslation } from 'react-i18next';
-import spanish from './assets/spanish.png';
-import english from './assets/english.png';
+import Header from './components/pure/Header';
+// Importaciones de estilos
+import './styles/AppStyles/App.css';
+
 
 function App() {
-
-  const { t, i18n } = useTranslation("global");
-
   return (
-    <div className="App">
-      <Router>
-        <header className="Head">
-          <img src={logo} width='150' alt="Logo de la productora" />
-          <nav className='list'>
-            {/*TODO: <Link to="/">Inicio</Link> */}
-            <Link className='unit-list' to="/servicios">{t("header.services")}</Link>
-            <Link className='unit-list' to="/staff">{t("header.staff")}</Link>
-            <Link className='unit-list' to="/contacto">{t("header.contact")}</Link>
-            <img src={i18n.language === 'es' ? spanish : english} onClick={i18n.language === 'es' ? () => i18n.changeLanguage("en") : () => i18n.changeLanguage("es")} />
-          </nav>
-          
-        </header>
+    <Router>
+      <div className="App">
+        <Header/>
         <Routes>
           {/* HomePage */}
           <Route path="/" element={<HomePage />} />
@@ -36,9 +24,9 @@ function App() {
           {/* 404 */}
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>
-      </Router>
-    </div>
-  )
-}
+      </div>
+    </Router>
+  );
+};
 
 export default App;

@@ -1,9 +1,13 @@
+// Importaciones por defecto
 import React from 'react';
+// Importaciones de dependencias
 import { useTranslation } from 'react-i18next';
+// Importaciones de estilos
 import '../../styles/AboutStyles/AboutStyles.css';
 
 function About() {
-
+  
+    // Texto para traduccion
     const { t } = useTranslation("global");
 
   return (
