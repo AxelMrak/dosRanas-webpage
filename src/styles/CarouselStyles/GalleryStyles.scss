@@ -1,7 +1,9 @@
 @import '../variables';
+@import '../mixins';
 
 .d-block {
     filter: brightness(0.4);
+    height: 75vh;
 }
 
 .carousel-caption {
@@ -19,4 +21,20 @@
 
 .P-carousell {
     font-size: 1.8rem;
+}
+
+@include small() {
+    .d-block {
+        height: 45vh;
+    }
+    .carousel-caption {
+        font-size: 250%;
+        padding-top: 0rem;
+    }
+    .Carrousell-subItems{
+        font-size: 50%;
+    }
+    .P-carousell {
+        font-size: 80%;
+    }
 }

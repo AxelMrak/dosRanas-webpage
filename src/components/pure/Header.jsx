@@ -7,24 +7,44 @@ import { useTranslation } from 'react-i18next';
 import logo from '../../assets/Logo provisorio.svg';
 import spanish from '../../assets/spanish.png';
 import english from '../../assets/english.png';
+import Search from '../container/Search';
 
 function Header() {
     // Texto de traduccion y funcion para modificar idioma
     const { t, i18n } = useTranslation("global");
 
     return (
-        <header className="Head">
-            <img src={logo} width='150' alt="Logo de la productora" />
-            <nav className='list'>
-                {/*TODO: <Link to="/">Inicio</Link> */}
-                <Link className='unit-list' to="/servicios">{t("header.services")}</Link>
-                <Link className='unit-list' to="/staff">{t("header.staff")}</Link>
-                <Link className='unit-list' to="/contacto">{t("header.contact")}</Link>
-                {/* Cambia en funcion del idioma actual que es recibido mediante la funcion i18n.language */}
-                {/* Cambia el lenguaje de la pagina mediante la funcion i18n.changeLanguage */}
-                <img src={i18n.language === 'es' ? spanish : english} onClick={i18n.language === 'es' ? () => i18n.changeLanguage("en") : () => i18n.changeLanguage("es")} />
-            </nav>
-        </header>
+        <nav className="navbar navbar-expand-lg bg-light gx-4">
+            <div className="container-fluid">
+                <Link className="navbar-brand" to='/'>
+                    <img src={logo} width='100' />
+                    Dos Ranas Productora
+                </Link>
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
+                </button>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <Link className='unit-list' to="/artistas">{t("header.artists")}</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className='unit-list' to="/servicios">{t("header.services")}</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className='unit-list' to="/staff">{t("header.staff")}</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className='unit-list' to="/contacto">{t("header.contact")}</Link>
+                        </li>
+                    </ul>
+                    <Search/>
+                    <img src={i18n.language === 'es' ? spanish : english} onClick={i18n.language === 'es' ? () => i18n.changeLanguage("en") : () => i18n.changeLanguage("es")} />
+                </div>
+
+            </div>
+
+        </nav>
     );
 };
 

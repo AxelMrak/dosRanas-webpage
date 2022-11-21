@@ -11,10 +11,11 @@ import '../../styles/ArtistsStyles/ArtistsContainer.css';
 function ArtistsContainer() {
 
     //* Estado global: Artistas
-    const artists = useSelector(state => state.artists);
+    const artists = useSelector(state => state.artists.artists);
 
     // Texto para traduccion
     const { t } = useTranslation("global");
+
 
   return (
     <div className='artists-section-container'>
@@ -22,8 +23,8 @@ function ArtistsContainer() {
         <div className='artists-main-container'>
           {/* { Recorremos el estado global artista y renderizamos un componente artista por cada uno  */}
           {
-            artists.map(artist => 
-                <Artist key={artist.name} name={artist.name} img={artist.image} video={artist.url}/>
+            artists.map((artist, index) => 
+                <Artist index={index} key={artist.name} name={artist.name} img={artist.image} video={artist.url}/>
             )
           }
         </div>

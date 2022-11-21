@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+/* Tamaños */
 .container-artist {
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -28,7 +32,7 @@
   justify-content: center;
   row-gap: 1rem;
   color: black;
-  padding: 1rem;
+  padding: 2rem;
   background-color: white;
   border: 1px solid rgb(224, 223, 223);
   border-radius: 25px;
@@ -42,6 +46,10 @@
 
 .card-artist img {
   border-radius: 25px;
+}
+
+.card-artist h3 {
+  font-size: 4vw;
 }
 
 .fancy {

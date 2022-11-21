@@ -1,7 +1,10 @@
+@charset "UTF-8";
 /* PALETA DE COLORES */
 /* FUENTES TIPOGRAFICAS */
+/* Tamaños */
 .d-block {
   filter: brightness(0.4);
+  height: 75vh;
 }
 
 .carousel-caption {
@@ -19,4 +22,20 @@
 
 .P-carousell {
   font-size: 1.8rem;
+}
+
+@media (max-width: 767.98px) {
+  .d-block {
+    height: 45vh;
+  }
+  .carousel-caption {
+    font-size: 250%;
+    padding-top: 0rem;
+  }
+  .Carrousell-subItems {
+    font-size: 50%;
+  }
+  .P-carousell {
+    font-size: 80%;
+  }
 }/*# sourceMappingURL=GalleryStyles.css.map */

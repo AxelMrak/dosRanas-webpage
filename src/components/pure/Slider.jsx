@@ -28,14 +28,14 @@ function Slider() {
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img src={vid1} className="d-block w-100" alt="..." />
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-md-block">
                         <p>{t("slider.title1")}</p>
                         <p>{t("slider.text1")}</p>
                     </div>
                 </div>
                 <div className="carousel-item">
                     <img src={vid2} className="d-block w-100" alt="..." />
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-md-block">
 
                         <div className='Carrousell-subItems'>
                             <p>{t("slider.title2")}</p>
@@ -46,7 +46,7 @@ function Slider() {
                 </div>
                 <div className="carousel-item">
                     <img src={vid3} className="d-block w-100" alt="..." />
-                    <div className="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-md-block">
                         <div className='Carrousell-subItems'>
                             <p>{t("slider.title3")}</p>
                             <p className='P-carousell'>{t("slider.text3")}</p>

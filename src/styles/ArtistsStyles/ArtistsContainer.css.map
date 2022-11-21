@@ -1,1 +1,1 @@
-{"version":3,"sources":["ArtistsContainer.scss","ArtistsContainer.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,6BAAA;EACA,eAAA;ACCJ;;ADEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;ACCJ","file":"ArtistsContainer.css"}
+{"version":3,"sources":["ArtistsContainer.css","../_variables.scss","ArtistsContainer.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAZ,sBAAA;AAKA,yBAAA;AAKA,YAAA;ACPJ;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,6BAAA;EACA,eAAA;AFEJ;;AECA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;AFEJ;;AECA;EACI,cDLe;ADOnB","file":"ArtistsContainer.css"}
