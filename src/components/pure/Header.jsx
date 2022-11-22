@@ -19,7 +19,7 @@ function Header() {
     const dispatch = useDispatch()
 
     return (
-        <nav className="navbar navbar-dark navbar-expand-lg gx-4">
+        <nav className="navbar navbar-dark navbar-expand-lg bg-dark gx-4">
             <div className="container-fluid">
                 <Link className="navbar-brand" to='/'>
                     <img src={logo} width='100' />

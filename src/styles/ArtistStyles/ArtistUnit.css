@@ -46,7 +46,7 @@
 }
 
 .card-artist h3 {
-  font-size: 4vw;
+  font-size: 2rem;
 }
 
 .fancy {
@@ -69,10 +69,10 @@
   text-decoration: none;
   text-transform: none;
   transition: all 0.3s ease-in-out;
+  -webkit-user-select: none;
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
-  -webkit-user-select: none;
   font-size: 13px;
 }
 
@@ -155,4 +155,12 @@
 .fancy:hover .bottom-key-2 {
   right: 0;
   width: 0;
+}
+
+@media (max-width: 767.98px) {
+  .container-artist {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
 }/*# sourceMappingURL=ArtistUnit.css.map */

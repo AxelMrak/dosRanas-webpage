@@ -64,8 +64,8 @@
     text-decoration: none;
     text-transform: none;
     transition: all 0.3s ease-in-out;
-    user-select: none;
     -webkit-user-select: none;
+    user-select: none;
     font-size: 13px;
 }
 
@@ -148,4 +148,10 @@
 .fancy:hover .bottom-key-2 {
     right: 0;
     width: 0;
+}
+
+@include small() {
+    .container-artist {
+        width: max-content;
+    }
 }

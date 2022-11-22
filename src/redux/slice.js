@@ -39,7 +39,7 @@ const initialState = {
         },
         {
             name: 'LaJuana',
-            image: 'https://scontent.fmdz2-2.fna.fbcdn.net/v/t39.30808-6/293845422_119276054171352_6508296417276913231_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHCegFb4oK-Iy5g4b1RoIw2MbwDeLsGrnwxvAN4uwaufBU3_Xz8Uu_NPXbPBvatj8lr7OGXoj-AGM_DnoyjXdrq&_nc_ohc=BdZZ3ZZnBsEAX9XEY8e&tn=UvzlW0Opv9cORTvZ&_nc_ht=scontent.fmdz2-2.fna&oh=00_AfBI0eqx_1lfOl5w4AM58TKUfjbK6ecjh3nkjjBttBDp4g&oe=637B3567',
+            image: 'https://scontent.fmdz2-2.fna.fbcdn.net/v/t39.30808-6/293845422_119276054171352_6508296417276913231_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHCegFb4oK-Iy5g4b1RoIw2MbwDeLsGrnwxvAN4uwaufBU3_Xz8Uu_NPXbPBvatj8lr7OGXoj-AGM_DnoyjXdrq&_nc_ohc=PXdZd-00YPgAX89oSwS&tn=UvzlW0Opv9cORTvZ&_nc_ht=scontent.fmdz2-2.fna&oh=00_AfALsDdvcACc6Hxqn4l6czvIJVeq63wkZHHvB6SME4w7GQ&oe=63812427',
             url: 'https://www.youtube.com/watch?v=-nujGzV3D9E'
         }
     ],

@@ -21,3 +21,10 @@
     margin: 3rem;
     font-size: $SubtitleSize;
 }
+
+@include small() {
+    .artists-main-container {
+        flex-direction: column;
+        align-items: baseline;
+    }
+}

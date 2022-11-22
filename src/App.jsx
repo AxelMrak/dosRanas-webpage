@@ -6,18 +6,20 @@ import Header from './components/pure/Header';
 // Importaciones de estilos
 import './styles/AppStyles/App.css';
 import ArtistsPage from './pages/Artistas/ArtistsPage';
+import Footer from './components/pure/Footer';
 
 function App() {
 
   return (
     <Router>
       <div className="App">
-        <Header/>
+        <Header />
+
         <Routes>
           {/* HomePage */}
           <Route path="/" element={<HomePage />} />
           {/* Artistas Page */}
-          <Route path='/artistas' element={<ArtistsPage/>}/>
+          <Route path='/artistas' element={<ArtistsPage />} />
           {/* Servicios */}
           <Route path="/servicios" element={<h2>Pendiente</h2>} />
           {/* Staff */}
@@ -28,6 +30,7 @@ function App() {
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>
       </div>
+      <Footer />
     </Router>
   );
 };

@@ -1,9 +1,6 @@
 @import '../variables';
 @import '../mixins';
 
-.navbar {
-    background-color: #000000f8 ;
-}
 
 #navbarSupportedContent{
     column-gap: 1rem;
@@ -32,6 +29,9 @@
 }
 
 @include small() {
+    .App {
+        width: 145vw;
+    }
     .container-fluid button {
         margin: 1rem;
     }
