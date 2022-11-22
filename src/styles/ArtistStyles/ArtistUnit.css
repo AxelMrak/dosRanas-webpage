@@ -16,20 +16,17 @@
 }
 
 .container-artist:hover {
-  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3);
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.3019607843);
 }
 
 .card-artist {
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  width: 400px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  text-align: center;
   row-gap: 1rem;
   color: black;
   padding: 2rem;
