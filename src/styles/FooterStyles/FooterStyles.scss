@@ -44,3 +44,10 @@
     font-size: $TextSize;
     font-family: $Texto;
 }
+
+@include small() {
+    .foot {
+        flex-direction: column;
+        width: 145%;
+    }
+}

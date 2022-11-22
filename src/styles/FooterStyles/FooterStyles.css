@@ -45,4 +45,11 @@
 .logo-name-container h3 {
   font-size: 2rem;
   font-family: "Nunito Sans", sans-serif;
+}
+
+@media (max-width: 767.98px) {
+  .foot {
+    flex-direction: column;
+    width: 145%;
+  }
 }/*# sourceMappingURL=FooterStyles.css.map */
