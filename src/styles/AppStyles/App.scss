@@ -1,6 +1,10 @@
 @import '../variables';
 @import '../mixins';
 
+.navbar {
+    background-color: #000000f8 ;
+}
+
 #navbarSupportedContent{
     column-gap: 1rem;
 }
