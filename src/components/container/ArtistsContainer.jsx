@@ -10,9 +10,9 @@ import '../../styles/ArtistsStyles/ArtistsContainer.css';
 
 function ArtistsContainer() {
 
-    //* Estado global: Artistas
+    //* Estados globales: Artistas y artistas filtrados
     const artists = useSelector(state => state.artists.artists);
-
+    const artistsFiltered = useSelector(state => state.artists.artistsFiltered);
     // Texto para traduccion
     const { t } = useTranslation("global");
 
@@ -21,14 +21,17 @@ function ArtistsContainer() {
     <div className='artists-section-container'>
       <h2>{t("artists.title")}</h2>
         <div className='artists-main-container'>
-          {/* { Recorremos el estado global artista y renderizamos un componente artista por cada uno  */}
+          {/*  Si el estado de artistas filtrados es mayor a un array vacio se rendereizan los artistas filtrados. Y sino, osea no se ha realizado una busqueda, se muestran todos los artistas  */}
           {
+            artistsFiltered > [] ? artistsFiltered.map((artist, index) => 
+              <Artist index = { index } key = { artist.name } name = { artist.name } img = { artist.image } video = { artist.url } />
+            )
+            :
             artists.map((artist, index) => 
                 <Artist index={index} key={artist.name} name={artist.name} img={artist.image} video={artist.url}/>
             )
           }
         </div>
-        
     </div>
   );
 };

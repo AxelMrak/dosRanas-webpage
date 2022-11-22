@@ -7,8 +7,8 @@ import Header from './components/pure/Header';
 import './styles/AppStyles/App.css';
 import ArtistsPage from './pages/Artistas/ArtistsPage';
 
-
 function App() {
+
   return (
     <Router>
       <div className="App">
