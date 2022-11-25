@@ -2,6 +2,34 @@
 /* PALETA DE COLORES */
 /* FUENTES TIPOGRAFICAS */
 /* Tamaños */
+.alert-primary {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 40%;
+  height: 10%;
+  font-family: "Nunito Sans", sans-serif;
+  z-index: 3;
+}
+
+.navbar {
+  background-color: black !important;
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  z-index: 3;
+}
+
+.navbar-collapse-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+}
+
 #navbarSupportedContent {
   -moz-column-gap: 1rem;
        column-gap: 1rem;

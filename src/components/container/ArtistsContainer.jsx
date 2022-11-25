@@ -28,7 +28,7 @@ function ArtistsContainer() {
             )
             :
             artists.map((artist, index) => 
-                <Artist index={index} key={artist.name} name={artist.name} img={artist.image} video={artist.url}/>
+                <Artist id={index} key={artist.name} name={artist.name} img={artist.image} video={artist.url}/>
             )
           }
         </div>

@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+/* Tamaños */
+.cart-ico::after {
+  background-color: red;
+  width: 10px;
+}
+
+.items-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.item-unit-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+.item-unit-list img {
+  border-radius: 100%;
+}
+
+.item-unit-list p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+}/*# sourceMappingURL=CartCanvaStyle.css.map */

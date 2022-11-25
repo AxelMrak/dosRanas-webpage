@@ -1,10 +1,16 @@
 {
+	"alert": {
+		"cartAlert": "Already exists in the cart"
+	},
 	"header": {
+		"menu": "Menu",
 		"services": "Services",
 		"staff": "Staff",
 		"contact": "Contact",
 		"artists": "Artists",
-		"search": "Search"
+		"search": "Artists, services, staff, etc.",
+		"searchBtn": "Search",
+		"cartTitle": "Cart"
 	},
 	"slider": {
 		"title1": "Dos Ranas",
@@ -24,7 +30,7 @@
 	"artists": {
 		"title": "Artists",
 		"btn": "Watch video",
+		"btn2": "Contract",
 		"p": "Meet the artists we have worked with"
-
 	}
 }

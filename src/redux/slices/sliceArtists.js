@@ -44,7 +44,8 @@ const initialState = {
         }
     ],
     // Artistas que ya fueron filtrados por el componente search
-    artistsFiltered: []
+    artistsFiltered: [],
+    artistsCart: []
 };
 
 export const artistsSlice = createSlice({
@@ -68,9 +69,21 @@ export const artistsSlice = createSlice({
         // Reducer que resetea el estado que contiene los artistas filtrados
         resetArtists: (state) => {
             state.artistsFiltered = [];
+        },
+        buyArtist: (state, action) => {
+            let artistToCart = {
+                index: action.payload.index,
+                name: action.payload.name,
+                img: action.payload.img
+            };
+            if (state.artists.some(elem => elem.id === action.payload.id) === false) {
+                state.artistsCart.push(artistToCart)
+            } else {
+                null
+            } 
         }
     }
 });
 
-export const { filterArtists, resetArtists } = artistsSlice.actions;
+export const { filterArtists, resetArtists, buyArtist } = artistsSlice.actions;
 export default artistsSlice.reducer;

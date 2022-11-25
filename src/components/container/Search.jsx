@@ -3,7 +3,7 @@ import React, {  useState } from 'react';
 // Importaciones de librerias
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
-import { filterArtists } from '../../redux/slice';
+import { filterArtists } from '../../redux/slices/sliceArtists';
 
 function Search() {
 
@@ -27,7 +27,7 @@ function Search() {
           <input className="form-control me-2" type="search" placeholder={t("header.search")} aria-label="Search" onChange={
             (e) => setText(e.target.value.toString().toLowerCase())
           }/>
-          <button className="btn btn-outline-success" type="submit">{t("header.search")}</button>
+          <button className="btn btn-outline-success" type="submit">{t("header.searchBtn")}</button>
       </form>
     );
 };

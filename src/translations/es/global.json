@@ -1,10 +1,16 @@
 {
+	"alert": {
+		"cartAlert": "Ya existe en el carrito"
+	},
 	"header": {
+		"menu": "Menú",
 		"services": "Servicios",
 		"staff": "Staff",
 		"contact": "Contacto",
 		"artists": "Artistas",
-		"search": "Buscar"
+		"search": "Artistas, servicios, staff, etc.",
+		"searchBtn": "Search",
+		"cartTitle": "Carrito"
 	},
 	"slider": {
 		"title1": "Dos Ranas",
@@ -24,6 +30,7 @@
 	"artists": {
 		"title": "Artistas",
 		"btn": "Ver video",
+		"btn2": "Contratar",
 		"p": "Conoce los artistas con los que hemos trabajado"
 	}
 }

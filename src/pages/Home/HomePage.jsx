@@ -9,7 +9,7 @@ import OurJobs from '../../components/container/OurJobs';
 import Instagram from '../../components/container/Instagram';
 import ArtistsContainer from '../../components/container/ArtistsContainer';
 import { useDispatch } from 'react-redux';
-import { resetArtists } from '../../redux/slice';
+import { resetArtists } from '../../redux/slices/sliceArtists';
 
 function HomePage() {
 
