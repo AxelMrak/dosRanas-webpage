@@ -1,6 +1,6 @@
 // Importaciones por defecto
 import React, { useState } from 'react';
-import { Badge } from 'react-bootstrap';
+import Badge  from 'rsuite/Badge';
 // Importaciones de dependencias
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useTranslation } from 'react-i18next';
@@ -24,8 +24,9 @@ function Cart() {
 
   return (
     <>
-      <img className='cart-ico' src={cartIco} onClick={handleShow} width='50'/>
-        <Badge className='badge'>{artistsCart.length}</Badge>
+        <Badge className='badge-count' content={artistsCart.length}>
+          <img className='cart-ico' width='40px' src={cartIco} onClick={handleShow}></img>
+        </Badge>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>{t("header.cartTitle")}</Offcanvas.Title>

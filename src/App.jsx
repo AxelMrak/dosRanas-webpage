@@ -26,6 +26,7 @@ function App() {
       <div className="App">
         
         <Header />
+
         {   
           includes === true ? <Alert variant='primary'>{ t("alert.cartAlert") }</Alert> : null
         }

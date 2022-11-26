@@ -2,9 +2,25 @@
 /* PALETA DE COLORES */
 /* FUENTES TIPOGRAFICAS */
 /* Tamaños */
-.cart-ico::after {
-  background-color: red;
-  width: 10px;
+.badge-count {
+  display: flex;
+  cursor: pointer;
+}
+
+.badge-count:hover {
+  opacity: 0.5;
+}
+
+.rs-badge-content {
+  position: relative;
+  left: -18px;
+  top: -7px;
+  background-color: tomato;
+  color: white;
+  border-radius: 100%;
+  width: 26px;
+  height: 27px;
+  text-align: center;
 }
 
 .items-list {

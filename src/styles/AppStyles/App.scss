@@ -11,39 +11,146 @@
     z-index: 3;
 }
 
+//Header styles
+
 .navbar {
-    background-color: black !important;
-    position: sticky !important;
-    top: 0;
-    z-index: 3;
+    background-color: $ColorSecundario;
+    color: $ColorTerciario;
+    padding: 1rem !important;
 }
 
-.navbar-collapse-body {
+.list {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    column-gap: 2rem;
-}
-
-#navbarSupportedContent{
     column-gap: 1rem;
-
+    list-style: none;
 }
 
-.container-fluid img {
-    margin-right: 1rem;
-}
-
-.unit-list {
-    margin: 1rem;
+.nav-item a{
     text-decoration: none;
-    color: $ColorTerciario;
-    font-family: $Subtitulo;
+    color: white;
 }
 
-.navbar-brand {
+.others-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.brand h2 {
     font-family: $Titulo;
+    font-size: $SubtitleSize;
+}
+
+.glitch {
+    font-family: $Titulo;
+    color: white;
+    position: relative;
+    font-size: $TextSize;
+    // margin: 70px 200px;
+    animation: glitch 5s 5s infinite;
+}
+
+.glitch::before {
+    content: attr(data-text);
+    position: absolute;
+    left: -2px;
+    text-shadow: -5px 0 white;
+    background: black;
+    overflow: hidden;
+    top: 0;
+    animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+
+.glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    text-shadow: -5px 0 lightgreen;
+    background: black;
+    overflow: hidden;
+    top: 0;
+    animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+@keyframes glitch {
+    1% {
+        transform: rotateX(10deg) skewX(90deg);
+    }
+
+    2% {
+        transform: rotateX(0deg) skewX(0deg);
+    }
+}
+
+@keyframes noise-1 {
+    $steps: 30;
+
+    @for $i from 1 through $steps {
+        #{percentage($i*(1/$steps))} {
+            $top: random(100);
+            $bottom: random(101 - $top);
+            clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+        }
+    }
+}
+
+@keyframes noise-2 {
+    $steps: 30;
+
+    @for $i from 0 through $steps {
+        #{percentage($i*(1/$steps))} {
+            $top: random(100);
+            $bottom: random(101 - $top);
+            clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+        }
+    }
+}
+
+.glow {
+    @extend .glitch;
+    text-shadow: 0 0 1000px rgb(223, 191, 191);
+    color: transparent;
+    position: absolute;
+    top: 0;
+}
+
+.menu-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.collapsible {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-menu {
+    font-family: $Texto;
+    padding: 0.7rem;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: all 1s;
+}
+
+.btn-menu:hover {
+    background-color: $ColorSecundario;
+    border: 1px solid white;
+    color: $ColorTerciario;
 }
 
 .artists-page-main {
@@ -57,7 +164,17 @@
     .App {
         width: 145vw;
     }
-    .container-fluid button {
-        margin: 1rem;
+    .navbar {
+        
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
     }
+
+    .brand {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
 }
