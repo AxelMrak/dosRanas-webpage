@@ -35,9 +35,9 @@ function Header() {
                 <Link to='/'>
                     <img src={logo} width='100' />
                 </Link>
-                <div class="container">
-                    <div class="glitch" data-text="Dos Ranas">Dos Ranas Productora</div>
-                    <div class="glow">Dos Ranas Productora</div>
+                <div className="container">
+                    <div className="glitch" data-text="Dos Ranas">Dos Ranas Productora</div>
+                    <div className="glow">Dos Ranas Productora</div>
                 </div>
             </div>
             <div className='menu-search'>
