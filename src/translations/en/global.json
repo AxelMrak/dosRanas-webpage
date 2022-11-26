@@ -21,9 +21,15 @@
 		"text3": "Our staff is integrated for the great proffesionals."
 	},
 	"about": {
-		"title": "About us",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		"title": "about us?",
+		"text": "We are a production company dedicated to offering audiovisual technical production services for shows of any scale. Our vast international experience allows Dos Ranas Audio Films to provide comprehensive services in audiovisual productions, from consulting to production, providing professional services to national and international clients from the Argentine Republic, Bolivia, Chile, Paraguay and more."
 	},
+
+	"ourTeam": {
+		"title": "Our Team",
+		"text": "We have a consolidated team, with more than 10 years of consolidated experience of professionals specialized in the technical production of shows, concerts, recitals, festivals, music videos, productions, discographies, artist representation, advertisements, documentaries, a constant content creation."
+	},
+
 	"ourJobs": {
 		"title": "Our jobs"
 	},

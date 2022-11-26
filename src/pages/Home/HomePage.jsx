@@ -10,6 +10,7 @@ import Instagram from '../../components/container/Instagram';
 import ArtistsContainer from '../../components/container/ArtistsContainer';
 import { useDispatch } from 'react-redux';
 import { resetArtists } from '../../redux/slices/sliceArtists';
+import OurTeam from '../../components/container/OurTeam';
 
 function HomePage() {
 
@@ -28,6 +29,7 @@ function HomePage() {
         <About/>
         <OurJobs/>
         <Instagram/>
+        <OurTeam/>
         <ArtistsContainer/>
     </div>
   )

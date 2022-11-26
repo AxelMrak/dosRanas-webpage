@@ -2,9 +2,10 @@
 /* PALETA DE COLORES */
 /* FUENTES TIPOGRAFICAS */
 /* Tamaños */
-.cart-ico::after {
-  background-color: red;
+.badge {
   width: 10px;
+  position: relative;
+  top: 10%;
 }
 
 .items-list {

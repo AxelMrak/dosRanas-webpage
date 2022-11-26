@@ -64,4 +64,21 @@
   .container-fluid button {
     margin: 1rem;
   }
+}
+.whatsapp-global-container {
+  /*width: min-content;
+  position: sticky;
+  left: 100%;
+  bottom: 0%;
+  margin: 1rem; */
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+  text-decoration: none;
+  margin-top: 16px;
 }/*# sourceMappingURL=App.css.map */

@@ -11,6 +11,7 @@
 }
 
 .artists-section-container {
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,6 +20,7 @@
 
 .artists-section-container h2 {
     margin: 3rem;
+    color: white;
     font-size: $SubtitleSize;
 }
 

@@ -12,6 +12,7 @@ import { Alert } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 // Importaciones de estilos
 import './styles/AppStyles/App.css';
+import WhatsAppGlobal from './components/container/WhatsAppIcon';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>
       </div>
+      <WhatsAppGlobal/>
       <Footer />
     </Router>
   );

@@ -21,9 +21,15 @@
 		"text3": "Nuestro staff esta compuesto por grandes profesionales que estan decididos en dar lo mejor de si para brindar un trabajo de calidad."
 	},
 	"about": {
-		"title": "Sobre nosotros",
-		"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+		"title": "¿Quienes somos?",
+		"text": "Somos una productora dedicada a ofrecer servicios de producción técnica audio visual para espectáculos cualquiera sea su escala. Nuestra vasta experiencia internacional permite a Dos Ranas Audio Films prestar servicios integrales en producciones audiovisuales, desde el asesoramiento hasta la producción, brindando servicios profesionales a clientes nacionales e internacionales de la República Argentina, Bolivia, Chile, Paraguay y más."
 	},
+
+	"ourTeam": {
+		"title": "Nuestro equipo",
+		"text": "Contamos con un equipo, con más de 10 años de experiencia consolidado de profesionales especializados en la producción técnica de shows, conciertos, recitales, festivales, video musicales, producciones, discografias, representaciòn de artistas, publicidades , documentales, un constante creado de contenidos."
+	},
+
 	"ourJobs": {
 		"title": "Nuestros trabajos"
 	},
