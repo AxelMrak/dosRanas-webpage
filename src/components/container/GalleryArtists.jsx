@@ -16,6 +16,8 @@ function GalleryArtists() {
 
   const artists = useSelector(state => state.artists.artists)
 
+  // TODO: Este componente debe ser puro, por tanto deberia estandarizarlo para luego reutilizarlo en la seccion staff o en las marcas que trabajaron con la empresa.
+
   return (
     <div>
       <Swiper
