@@ -14,40 +14,626 @@
 }
 
 .navbar {
-  background-color: black !important;
-  position: -webkit-sticky !important;
-  position: sticky !important;
-  top: 0;
-  z-index: 3;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 1rem !important;
 }
 
-.navbar-collapse-body {
+.list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
+  list-style: none;
 }
 
-#navbarSupportedContent {
+.nav-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.others-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
 }
 
-.container-fluid img {
-  margin-right: 1rem;
+.brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }
 
-.unit-list {
-  margin: 1rem;
-  text-decoration: none;
-  color: #FFFFFF;
-  font-family: "Source Sans Pro", serif;
-}
-
-.navbar-brand {
+.brand h2 {
   font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+}
+
+.glitch, .glow {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  position: relative;
+  font-size: 2rem;
+  -webkit-animation: glitch 5s 5s infinite;
+          animation: glitch 5s 5s infinite;
+}
+
+.glitch::before, .glow::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: -5px 0 white;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  -webkit-animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+          animation: noise-1 3s linear infinite alternate-reverse, glitch 5s 5.05s infinite;
+}
+
+.glitch::after, .glow::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -5px 0 lightgreen;
+  background: black;
+  overflow: hidden;
+  top: 0;
+  -webkit-animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+          animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+@-webkit-keyframes glitch {
+  1% {
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+@keyframes glitch {
+  1% {
+    transform: rotateX(10deg) skewX(90deg);
+  }
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+@-webkit-keyframes noise-1 {
+  3.3333333333% {
+    -webkit-clip-path: inset(21px 0 62px 0);
+            clip-path: inset(21px 0 62px 0);
+  }
+  6.6666666667% {
+    -webkit-clip-path: inset(89px 0 4px 0);
+            clip-path: inset(89px 0 4px 0);
+  }
+  10% {
+    -webkit-clip-path: inset(28px 0 63px 0);
+            clip-path: inset(28px 0 63px 0);
+  }
+  13.3333333333% {
+    -webkit-clip-path: inset(73px 0 20px 0);
+            clip-path: inset(73px 0 20px 0);
+  }
+  16.6666666667% {
+    -webkit-clip-path: inset(88px 0 11px 0);
+            clip-path: inset(88px 0 11px 0);
+  }
+  20% {
+    -webkit-clip-path: inset(30px 0 45px 0);
+            clip-path: inset(30px 0 45px 0);
+  }
+  23.3333333333% {
+    -webkit-clip-path: inset(97px 0 2px 0);
+            clip-path: inset(97px 0 2px 0);
+  }
+  26.6666666667% {
+    -webkit-clip-path: inset(92px 0 9px 0);
+            clip-path: inset(92px 0 9px 0);
+  }
+  30% {
+    -webkit-clip-path: inset(97px 0 4px 0);
+            clip-path: inset(97px 0 4px 0);
+  }
+  33.3333333333% {
+    -webkit-clip-path: inset(38px 0 22px 0);
+            clip-path: inset(38px 0 22px 0);
+  }
+  36.6666666667% {
+    -webkit-clip-path: inset(42px 0 49px 0);
+            clip-path: inset(42px 0 49px 0);
+  }
+  40% {
+    -webkit-clip-path: inset(59px 0 30px 0);
+            clip-path: inset(59px 0 30px 0);
+  }
+  43.3333333333% {
+    -webkit-clip-path: inset(27px 0 46px 0);
+            clip-path: inset(27px 0 46px 0);
+  }
+  46.6666666667% {
+    -webkit-clip-path: inset(77px 0 19px 0);
+            clip-path: inset(77px 0 19px 0);
+  }
+  50% {
+    -webkit-clip-path: inset(99px 0 1px 0);
+            clip-path: inset(99px 0 1px 0);
+  }
+  53.3333333333% {
+    -webkit-clip-path: inset(9px 0 4px 0);
+            clip-path: inset(9px 0 4px 0);
+  }
+  56.6666666667% {
+    -webkit-clip-path: inset(99px 0 1px 0);
+            clip-path: inset(99px 0 1px 0);
+  }
+  60% {
+    -webkit-clip-path: inset(47px 0 44px 0);
+            clip-path: inset(47px 0 44px 0);
+  }
+  63.3333333333% {
+    -webkit-clip-path: inset(91px 0 9px 0);
+            clip-path: inset(91px 0 9px 0);
+  }
+  66.6666666667% {
+    -webkit-clip-path: inset(42px 0 46px 0);
+            clip-path: inset(42px 0 46px 0);
+  }
+  70% {
+    -webkit-clip-path: inset(73px 0 23px 0);
+            clip-path: inset(73px 0 23px 0);
+  }
+  73.3333333333% {
+    -webkit-clip-path: inset(9px 0 18px 0);
+            clip-path: inset(9px 0 18px 0);
+  }
+  76.6666666667% {
+    -webkit-clip-path: inset(62px 0 2px 0);
+            clip-path: inset(62px 0 2px 0);
+  }
+  80% {
+    -webkit-clip-path: inset(24px 0 16px 0);
+            clip-path: inset(24px 0 16px 0);
+  }
+  83.3333333333% {
+    -webkit-clip-path: inset(32px 0 8px 0);
+            clip-path: inset(32px 0 8px 0);
+  }
+  86.6666666667% {
+    -webkit-clip-path: inset(35px 0 52px 0);
+            clip-path: inset(35px 0 52px 0);
+  }
+  90% {
+    -webkit-clip-path: inset(88px 0 10px 0);
+            clip-path: inset(88px 0 10px 0);
+  }
+  93.3333333333% {
+    -webkit-clip-path: inset(34px 0 66px 0);
+            clip-path: inset(34px 0 66px 0);
+  }
+  96.6666666667% {
+    -webkit-clip-path: inset(69px 0 31px 0);
+            clip-path: inset(69px 0 31px 0);
+  }
+  100% {
+    -webkit-clip-path: inset(60px 0 31px 0);
+            clip-path: inset(60px 0 31px 0);
+  }
+}
+@keyframes noise-1 {
+  3.3333333333% {
+    -webkit-clip-path: inset(21px 0 62px 0);
+            clip-path: inset(21px 0 62px 0);
+  }
+  6.6666666667% {
+    -webkit-clip-path: inset(89px 0 4px 0);
+            clip-path: inset(89px 0 4px 0);
+  }
+  10% {
+    -webkit-clip-path: inset(28px 0 63px 0);
+            clip-path: inset(28px 0 63px 0);
+  }
+  13.3333333333% {
+    -webkit-clip-path: inset(73px 0 20px 0);
+            clip-path: inset(73px 0 20px 0);
+  }
+  16.6666666667% {
+    -webkit-clip-path: inset(88px 0 11px 0);
+            clip-path: inset(88px 0 11px 0);
+  }
+  20% {
+    -webkit-clip-path: inset(30px 0 45px 0);
+            clip-path: inset(30px 0 45px 0);
+  }
+  23.3333333333% {
+    -webkit-clip-path: inset(97px 0 2px 0);
+            clip-path: inset(97px 0 2px 0);
+  }
+  26.6666666667% {
+    -webkit-clip-path: inset(92px 0 9px 0);
+            clip-path: inset(92px 0 9px 0);
+  }
+  30% {
+    -webkit-clip-path: inset(97px 0 4px 0);
+            clip-path: inset(97px 0 4px 0);
+  }
+  33.3333333333% {
+    -webkit-clip-path: inset(38px 0 22px 0);
+            clip-path: inset(38px 0 22px 0);
+  }
+  36.6666666667% {
+    -webkit-clip-path: inset(42px 0 49px 0);
+            clip-path: inset(42px 0 49px 0);
+  }
+  40% {
+    -webkit-clip-path: inset(59px 0 30px 0);
+            clip-path: inset(59px 0 30px 0);
+  }
+  43.3333333333% {
+    -webkit-clip-path: inset(27px 0 46px 0);
+            clip-path: inset(27px 0 46px 0);
+  }
+  46.6666666667% {
+    -webkit-clip-path: inset(77px 0 19px 0);
+            clip-path: inset(77px 0 19px 0);
+  }
+  50% {
+    -webkit-clip-path: inset(99px 0 1px 0);
+            clip-path: inset(99px 0 1px 0);
+  }
+  53.3333333333% {
+    -webkit-clip-path: inset(9px 0 4px 0);
+            clip-path: inset(9px 0 4px 0);
+  }
+  56.6666666667% {
+    -webkit-clip-path: inset(99px 0 1px 0);
+            clip-path: inset(99px 0 1px 0);
+  }
+  60% {
+    -webkit-clip-path: inset(47px 0 44px 0);
+            clip-path: inset(47px 0 44px 0);
+  }
+  63.3333333333% {
+    -webkit-clip-path: inset(91px 0 9px 0);
+            clip-path: inset(91px 0 9px 0);
+  }
+  66.6666666667% {
+    -webkit-clip-path: inset(42px 0 46px 0);
+            clip-path: inset(42px 0 46px 0);
+  }
+  70% {
+    -webkit-clip-path: inset(73px 0 23px 0);
+            clip-path: inset(73px 0 23px 0);
+  }
+  73.3333333333% {
+    -webkit-clip-path: inset(9px 0 18px 0);
+            clip-path: inset(9px 0 18px 0);
+  }
+  76.6666666667% {
+    -webkit-clip-path: inset(62px 0 2px 0);
+            clip-path: inset(62px 0 2px 0);
+  }
+  80% {
+    -webkit-clip-path: inset(24px 0 16px 0);
+            clip-path: inset(24px 0 16px 0);
+  }
+  83.3333333333% {
+    -webkit-clip-path: inset(32px 0 8px 0);
+            clip-path: inset(32px 0 8px 0);
+  }
+  86.6666666667% {
+    -webkit-clip-path: inset(35px 0 52px 0);
+            clip-path: inset(35px 0 52px 0);
+  }
+  90% {
+    -webkit-clip-path: inset(88px 0 10px 0);
+            clip-path: inset(88px 0 10px 0);
+  }
+  93.3333333333% {
+    -webkit-clip-path: inset(34px 0 66px 0);
+            clip-path: inset(34px 0 66px 0);
+  }
+  96.6666666667% {
+    -webkit-clip-path: inset(69px 0 31px 0);
+            clip-path: inset(69px 0 31px 0);
+  }
+  100% {
+    -webkit-clip-path: inset(60px 0 31px 0);
+            clip-path: inset(60px 0 31px 0);
+  }
+}
+@-webkit-keyframes noise-2 {
+  0% {
+    -webkit-clip-path: inset(92px 0 2px 0);
+            clip-path: inset(92px 0 2px 0);
+  }
+  3.3333333333% {
+    -webkit-clip-path: inset(17px 0 20px 0);
+            clip-path: inset(17px 0 20px 0);
+  }
+  6.6666666667% {
+    -webkit-clip-path: inset(52px 0 35px 0);
+            clip-path: inset(52px 0 35px 0);
+  }
+  10% {
+    -webkit-clip-path: inset(1px 0 65px 0);
+            clip-path: inset(1px 0 65px 0);
+  }
+  13.3333333333% {
+    -webkit-clip-path: inset(31px 0 37px 0);
+            clip-path: inset(31px 0 37px 0);
+  }
+  16.6666666667% {
+    -webkit-clip-path: inset(30px 0 29px 0);
+            clip-path: inset(30px 0 29px 0);
+  }
+  20% {
+    -webkit-clip-path: inset(14px 0 1px 0);
+            clip-path: inset(14px 0 1px 0);
+  }
+  23.3333333333% {
+    -webkit-clip-path: inset(90px 0 9px 0);
+            clip-path: inset(90px 0 9px 0);
+  }
+  26.6666666667% {
+    -webkit-clip-path: inset(87px 0 3px 0);
+            clip-path: inset(87px 0 3px 0);
+  }
+  30% {
+    -webkit-clip-path: inset(60px 0 22px 0);
+            clip-path: inset(60px 0 22px 0);
+  }
+  33.3333333333% {
+    -webkit-clip-path: inset(64px 0 29px 0);
+            clip-path: inset(64px 0 29px 0);
+  }
+  36.6666666667% {
+    -webkit-clip-path: inset(41px 0 32px 0);
+            clip-path: inset(41px 0 32px 0);
+  }
+  40% {
+    -webkit-clip-path: inset(45px 0 36px 0);
+            clip-path: inset(45px 0 36px 0);
+  }
+  43.3333333333% {
+    -webkit-clip-path: inset(21px 0 44px 0);
+            clip-path: inset(21px 0 44px 0);
+  }
+  46.6666666667% {
+    -webkit-clip-path: inset(63px 0 27px 0);
+            clip-path: inset(63px 0 27px 0);
+  }
+  50% {
+    -webkit-clip-path: inset(21px 0 10px 0);
+            clip-path: inset(21px 0 10px 0);
+  }
+  53.3333333333% {
+    -webkit-clip-path: inset(87px 0 7px 0);
+            clip-path: inset(87px 0 7px 0);
+  }
+  56.6666666667% {
+    -webkit-clip-path: inset(15px 0 21px 0);
+            clip-path: inset(15px 0 21px 0);
+  }
+  60% {
+    -webkit-clip-path: inset(12px 0 18px 0);
+            clip-path: inset(12px 0 18px 0);
+  }
+  63.3333333333% {
+    -webkit-clip-path: inset(57px 0 13px 0);
+            clip-path: inset(57px 0 13px 0);
+  }
+  66.6666666667% {
+    -webkit-clip-path: inset(45px 0 2px 0);
+            clip-path: inset(45px 0 2px 0);
+  }
+  70% {
+    -webkit-clip-path: inset(64px 0 8px 0);
+            clip-path: inset(64px 0 8px 0);
+  }
+  73.3333333333% {
+    -webkit-clip-path: inset(4px 0 57px 0);
+            clip-path: inset(4px 0 57px 0);
+  }
+  76.6666666667% {
+    -webkit-clip-path: inset(95px 0 5px 0);
+            clip-path: inset(95px 0 5px 0);
+  }
+  80% {
+    -webkit-clip-path: inset(2px 0 6px 0);
+            clip-path: inset(2px 0 6px 0);
+  }
+  83.3333333333% {
+    -webkit-clip-path: inset(95px 0 5px 0);
+            clip-path: inset(95px 0 5px 0);
+  }
+  86.6666666667% {
+    -webkit-clip-path: inset(98px 0 1px 0);
+            clip-path: inset(98px 0 1px 0);
+  }
+  90% {
+    -webkit-clip-path: inset(92px 0 2px 0);
+            clip-path: inset(92px 0 2px 0);
+  }
+  93.3333333333% {
+    -webkit-clip-path: inset(15px 0 18px 0);
+            clip-path: inset(15px 0 18px 0);
+  }
+  96.6666666667% {
+    -webkit-clip-path: inset(94px 0 1px 0);
+            clip-path: inset(94px 0 1px 0);
+  }
+  100% {
+    -webkit-clip-path: inset(69px 0 14px 0);
+            clip-path: inset(69px 0 14px 0);
+  }
+}
+@keyframes noise-2 {
+  0% {
+    -webkit-clip-path: inset(92px 0 2px 0);
+            clip-path: inset(92px 0 2px 0);
+  }
+  3.3333333333% {
+    -webkit-clip-path: inset(17px 0 20px 0);
+            clip-path: inset(17px 0 20px 0);
+  }
+  6.6666666667% {
+    -webkit-clip-path: inset(52px 0 35px 0);
+            clip-path: inset(52px 0 35px 0);
+  }
+  10% {
+    -webkit-clip-path: inset(1px 0 65px 0);
+            clip-path: inset(1px 0 65px 0);
+  }
+  13.3333333333% {
+    -webkit-clip-path: inset(31px 0 37px 0);
+            clip-path: inset(31px 0 37px 0);
+  }
+  16.6666666667% {
+    -webkit-clip-path: inset(30px 0 29px 0);
+            clip-path: inset(30px 0 29px 0);
+  }
+  20% {
+    -webkit-clip-path: inset(14px 0 1px 0);
+            clip-path: inset(14px 0 1px 0);
+  }
+  23.3333333333% {
+    -webkit-clip-path: inset(90px 0 9px 0);
+            clip-path: inset(90px 0 9px 0);
+  }
+  26.6666666667% {
+    -webkit-clip-path: inset(87px 0 3px 0);
+            clip-path: inset(87px 0 3px 0);
+  }
+  30% {
+    -webkit-clip-path: inset(60px 0 22px 0);
+            clip-path: inset(60px 0 22px 0);
+  }
+  33.3333333333% {
+    -webkit-clip-path: inset(64px 0 29px 0);
+            clip-path: inset(64px 0 29px 0);
+  }
+  36.6666666667% {
+    -webkit-clip-path: inset(41px 0 32px 0);
+            clip-path: inset(41px 0 32px 0);
+  }
+  40% {
+    -webkit-clip-path: inset(45px 0 36px 0);
+            clip-path: inset(45px 0 36px 0);
+  }
+  43.3333333333% {
+    -webkit-clip-path: inset(21px 0 44px 0);
+            clip-path: inset(21px 0 44px 0);
+  }
+  46.6666666667% {
+    -webkit-clip-path: inset(63px 0 27px 0);
+            clip-path: inset(63px 0 27px 0);
+  }
+  50% {
+    -webkit-clip-path: inset(21px 0 10px 0);
+            clip-path: inset(21px 0 10px 0);
+  }
+  53.3333333333% {
+    -webkit-clip-path: inset(87px 0 7px 0);
+            clip-path: inset(87px 0 7px 0);
+  }
+  56.6666666667% {
+    -webkit-clip-path: inset(15px 0 21px 0);
+            clip-path: inset(15px 0 21px 0);
+  }
+  60% {
+    -webkit-clip-path: inset(12px 0 18px 0);
+            clip-path: inset(12px 0 18px 0);
+  }
+  63.3333333333% {
+    -webkit-clip-path: inset(57px 0 13px 0);
+            clip-path: inset(57px 0 13px 0);
+  }
+  66.6666666667% {
+    -webkit-clip-path: inset(45px 0 2px 0);
+            clip-path: inset(45px 0 2px 0);
+  }
+  70% {
+    -webkit-clip-path: inset(64px 0 8px 0);
+            clip-path: inset(64px 0 8px 0);
+  }
+  73.3333333333% {
+    -webkit-clip-path: inset(4px 0 57px 0);
+            clip-path: inset(4px 0 57px 0);
+  }
+  76.6666666667% {
+    -webkit-clip-path: inset(95px 0 5px 0);
+            clip-path: inset(95px 0 5px 0);
+  }
+  80% {
+    -webkit-clip-path: inset(2px 0 6px 0);
+            clip-path: inset(2px 0 6px 0);
+  }
+  83.3333333333% {
+    -webkit-clip-path: inset(95px 0 5px 0);
+            clip-path: inset(95px 0 5px 0);
+  }
+  86.6666666667% {
+    -webkit-clip-path: inset(98px 0 1px 0);
+            clip-path: inset(98px 0 1px 0);
+  }
+  90% {
+    -webkit-clip-path: inset(92px 0 2px 0);
+            clip-path: inset(92px 0 2px 0);
+  }
+  93.3333333333% {
+    -webkit-clip-path: inset(15px 0 18px 0);
+            clip-path: inset(15px 0 18px 0);
+  }
+  96.6666666667% {
+    -webkit-clip-path: inset(94px 0 1px 0);
+            clip-path: inset(94px 0 1px 0);
+  }
+  100% {
+    -webkit-clip-path: inset(69px 0 14px 0);
+            clip-path: inset(69px 0 14px 0);
+  }
+}
+.glow {
+  text-shadow: 0 0 1000px rgb(223, 191, 191);
+  color: transparent;
+  position: absolute;
+  top: 0;
+}
+
+.menu-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+.collapsible {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-menu {
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0.7rem;
+  border-radius: 20px;
+  border: 1px solid black;
+  transition: all 1s;
+}
+
+.btn-menu:hover {
+  background-color: #000000;
+  border: 1px solid white;
+  color: #FFFFFF;
 }
 
 .artists-page-main {
@@ -61,8 +647,15 @@
   .App {
     width: 145vw;
   }
-  .container-fluid button {
-    margin: 1rem;
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+  }
+  .brand {
+    flex-direction: column;
+    row-gap: 1rem;
   }
 }
 .whatsapp-global-container {

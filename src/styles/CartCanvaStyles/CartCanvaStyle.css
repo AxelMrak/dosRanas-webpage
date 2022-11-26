@@ -2,10 +2,26 @@
 /* PALETA DE COLORES */
 /* FUENTES TIPOGRAFICAS */
 /* Tamaños */
-.badge {
-  width: 10px;
+
+.badge-count {
+  display: flex;
+  cursor: pointer;
+}
+
+.badge-count:hover {
+  opacity: 0.5;
+}
+
+.rs-badge-content {
   position: relative;
-  top: 10%;
+  left: -18px;
+  top: -7px;
+  background-color: tomato;
+  color: white;
+  border-radius: 100%;
+  width: 26px;
+  height: 27px;
+  text-align: center;
 }
 
 .items-list {
