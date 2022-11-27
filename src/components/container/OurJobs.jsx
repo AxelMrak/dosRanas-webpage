@@ -6,9 +6,9 @@ import { ImageGrid } from 'react-fb-image-video-grid';
 // Importaciones de estilos
 import '../../styles/JobsStyles/OurJobsStyles.css';
 // Importaciones de imagenes
-import Img3 from '../../assets/Imagenes/AboutUs.jpg';
-import Img2 from '../../assets/Imagenes/AboutUs2.jpg';
-import Img1 from '../../assets/Imagenes/AboutUs3.jpg';
+import video1 from '../../assets/videos/Video demo 1.mp4';
+import video2 from '../../assets/videos/Video demo 2.mp4';
+import video3 from '../../assets/videos/Video demo 3.mp4';
 
 
 function OurJobs() {
@@ -19,9 +19,9 @@ function OurJobs() {
     <section className='jobs-main-container'>
         <h2>{t("ourJobs.title")}</h2>
           <ImageGrid className= "ImageGrid">
-            <img className='imagenes-clientes' src={Img1} />
-            <img className='imagenes-clientes' src={Img2} />
-            <img className='imagenes-clientes' src={Img3} />
+            <video src={video2} controls/>
+            <video src={video1} controls/>
+            <video src={video3} controls/>
           </ImageGrid>
     </section>
   );

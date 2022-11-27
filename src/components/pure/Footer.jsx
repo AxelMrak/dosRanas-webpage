@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from '../../assets/Logo provisorio.svg';
-import youtube from '../../assets/youtube-logo.png';
-import whatsapp from '../../assets/whatsapp-logo.png';
-import facebook from '../../assets/facebook-logo.png';
-import instagram from '../../assets/instagram-logo.png';
-import email from '../../assets/email-logo.png';
+import youtube from '../../assets/icons/youtube-logo.png';
+import whatsapp from '../../assets/icons/whatsapp-logo.png';
+import facebook from '../../assets/icons/facebook-logo.png';
+import instagram from '../../assets/icons/instagram-logo.png';
+import email from '../../assets/icons/email-logo.png';
 import '../../styles/FooterStyles/FooterStyles.css';
 
 function Footer() {

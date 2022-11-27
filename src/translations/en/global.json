@@ -3,6 +3,7 @@
 		"cartAlert": "Already exists in the cart"
 	},
 	"header": {
+		"title": "Producer",
 		"menu": "Menu",
 		"services": "Services",
 		"staff": "Staff",

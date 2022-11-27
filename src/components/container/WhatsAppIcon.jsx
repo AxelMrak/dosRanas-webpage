@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../assets/Imagenes/WhatsApp.png';
+import logo from '../../assets/icons/whatsapp-logo.png';
 
 function WhatsAppGlobal() {
   return (

@@ -6,7 +6,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useTranslation } from 'react-i18next';
 import { useSelector } from 'react-redux';
 // Importaciones de imagenes
-import cartIco from '../../assets/cart-ico.png';
+import cartIco from '../../assets/icons/cart-ico.png';
 // Importaciones de estilos
 import '../../styles/CartCanvaStyles/CartCanvaStyle.css';
 

@@ -7,8 +7,8 @@ import { useDispatch } from 'react-redux';
 import { resetArtists } from '../../redux/slices/sliceArtists';
 // Importaciones de imagenes
 import logo from '../../assets/Logo provisorio.svg';
-import spanish from '../../assets/spanish.png';
-import english from '../../assets/english.png';
+import spanish from '../../assets/icons/spanish.png';
+import english from '../../assets/icons/english.png';
 //Importaciones de componentes
 import Search from '../container/Search';
 import Cart from '../container/Cart';
@@ -36,8 +36,8 @@ function Header() {
                     <img src={logo} width='100' />
                 </Link>
                 <div className="container">
-                    <div className="glitch" data-text="Dos Ranas">Dos Ranas Productora</div>
-                    <div className="glow">Dos Ranas Productora</div>
+                    <div className="glitch" data-text="Dos Ranas">Dos Ranas {t("header.title")}</div>
+                    <div className="glow">Dos Ranas {t("header.title")}</div>
                 </div>
             </div>
             <div className='menu-search'>

@@ -19,21 +19,21 @@ function Slider() {
     const { t, i18n } = useTranslation("global");
 
     return (
-        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="false">
+        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div className="carousel-inner">
-                <div className="carousel-item active">
+                <div className="carousel-item active" data-bs-interval="10000">
                     <img src={vid1} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-md-block">
                         <p>{t("slider.title1")}</p>
                         <p>{t("slider.text1")}</p>
                     </div>
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" data-bs-interval="10000">
                     <img src={vid2} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-md-block">
 
@@ -44,7 +44,7 @@ function Slider() {
 
                     </div>
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" data-bs-interval="10000">
                     <img src={vid3} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-md-block">
                         <div className='Carrousell-subItems'>
