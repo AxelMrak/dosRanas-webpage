@@ -1,0 +1,21 @@
+@import '../mixins';
+@import '../variables';
+
+.gallery-artists-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.gallery-artists-main h2 {
+  font-family: $Titulo;
+  font-size: $SubtitleSize;
+}
+
+.mySwiper {
+  padding: 1rem;
+}

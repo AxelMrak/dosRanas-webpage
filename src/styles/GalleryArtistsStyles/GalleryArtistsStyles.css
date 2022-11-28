@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+/* Tamaños */
+.gallery-artists-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.gallery-artists-main h2 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+}
+
+.mySwiper {
+  padding: 1rem;
+}/*# sourceMappingURL=GalleryArtistsStyles.css.map */

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+/* Tamaños */
+.staff-unit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  padding: 1rem;
+}
+
+.staff-unit-card h3 {
+  font-family: "Source Sans Pro", serif;
+}
+
+.staff-unit-card img {
+  border: 2px solid white;
+  border-radius: 100%;
+}/*# sourceMappingURL=StaffUnitStyles.css.map */

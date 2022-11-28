@@ -1,0 +1,21 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+/* Tamaños */
+.instagram-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.instagram-container p {
+  width: 60%;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.instagram-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=InstagramStyles.css.map */

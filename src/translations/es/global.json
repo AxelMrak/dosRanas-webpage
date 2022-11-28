@@ -39,5 +39,12 @@
 		"btn": "Ver video",
 		"btn2": "Contratar",
 		"p": "Conoce los artistas con los que hemos trabajado"
+	},
+	"equipment": {
+		"title": "Equipamiento",
+		"text": "Contamos con el mejor equipamiento del mercado para brindarle un servicio profesional de alta calidad."
+	},
+	"instagram": {
+		"text": "En nuestro Instagram oficial encontrarás contenido exclusivo sobre nuestros trabajos. Además, contamos con backstages para que puedas ver el detrás de cámara de nuestras producciones."
 	}
 }

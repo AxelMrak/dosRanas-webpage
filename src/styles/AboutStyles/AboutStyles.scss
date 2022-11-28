@@ -6,19 +6,20 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 4rem;
-    text-align: center;
     row-gap: 1rem;
+    padding: 2rem;
+    background-color: $ColorSecundario;
+    color: $ColorTerciario;
 }
 
 .about-section-container h2 {
     font-size: $SubtitleSize;
     font-family: $Subtitulo;
-    color: $ColorSecundario;
+    color: white;
 }
 
 .about-section-container p {
     font-size: $TextSize;
     font-family: $Texto;
-    color: $ColorSecundario;
+    color: white;
 }

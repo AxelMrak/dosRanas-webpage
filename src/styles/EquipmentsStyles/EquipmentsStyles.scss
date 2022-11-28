@@ -1,31 +1,30 @@
+@import '../mixins';
 @import '../variables';
 
-.team-section-container {
+.equipments-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 1rem;
   row-gap: 1rem;
+  padding: 1rem;
   background-color: $ColorSecundario;
   color: $ColorTerciario;
-  
 }
 
-.team-section-container h2 {
-  font-size: $SubtitleSize;
+.equipments-container h2 {
   font-family: $Subtitulo;
+  font-size: $SubtitleSize;
 }
 
-.team-section-container p {
-  font-size: $TextSize;
+.equipments-container p {
   font-family: $Texto;
+  font-size: $TextSize;
 }
 
-.staff-container {
+.equipments-container-2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 1rem;
+  justify-content: space-around;
 }

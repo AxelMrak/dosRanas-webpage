@@ -2,25 +2,32 @@
 /* PALETA DE COLORES */
 /* FUENTES TIPOGRAFICAS */
 /* Tamaños */
-.about-section-container {
+.team-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 4rem;
-  text-align: center;
+  padding: 1rem;
   row-gap: 1rem;
+  background-color: #000000;
+  color: #FFFFFF;
 }
 
-.about-section-container h2 {
+.team-section-container h2 {
   font-size: 3rem;
   font-family: "Source Sans Pro", serif;
-  color: #000000;
 }
 
-.about-section-container p {
-  font-size: 2rem;
+.team-section-container p {
+  font-size: 1.5rem;
   font-family: "Nunito Sans", sans-serif;
-  color: #000000;
+}
+
+.staff-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
 }/*# sourceMappingURL=OurTeamStyles.css.map */

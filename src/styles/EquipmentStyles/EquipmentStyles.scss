@@ -1,0 +1,19 @@
+@import '../mixins';
+@import '../variables';
+
+.equipment-unit-card {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  background-color: $ColorTerciario;
+  color: $ColorSecundario;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 25px;
+}
+
+.equipment-unit-card h3 {
+  font-family: $Subtitulo;
+  font-size: $TextSize;
+}

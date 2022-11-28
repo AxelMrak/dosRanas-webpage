@@ -3,12 +3,8 @@
 /* FUENTES TIPOGRAFICAS */
 /* Tamaños */
 .container-artist {
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
-  height: -webkit-min-content;
-  height: -moz-min-content;
-  height: min-content;
+  width: 100%;
+  height: 100%;
   background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
   border-radius: 25px;
   transition: all 0.3s;
@@ -20,8 +16,8 @@
 }
 
 .card-artist {
-  width: 400px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +42,7 @@
 }
 
 .card-artist h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .fancy {
@@ -159,8 +155,7 @@
 
 @media (max-width: 767.98px) {
   .container-artist {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
+    width: 95%;
+    height: 80%;
   }
 }/*# sourceMappingURL=ArtistUnit.css.map */

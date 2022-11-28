@@ -4,7 +4,6 @@ import React, { useEffect } from 'react';
 import '../../styles/HomePageStyles/HomePageStyles.css';
 // Importaciones de componentes
 import About from '../../components/container/About';
-import Main from '../../components/container/Main';
 import OurJobs from '../../components/container/OurJobs';
 import Instagram from '../../components/container/Instagram';
 import ArtistsContainer from '../../components/container/ArtistsContainer';
@@ -13,6 +12,7 @@ import { resetArtists } from '../../redux/slices/sliceArtists';
 import OurTeam from '../../components/container/OurTeam';
 import GalleryArtists from '../../components/container/GalleryArtists';
 import MainSection from '../../components/sections/MainSection';
+import AboutSection from '../../components/sections/AboutSection';
 
 function HomePage() {
 
@@ -28,11 +28,13 @@ function HomePage() {
   return (
     <div className='home-main-container'>
         <MainSection/>
-        <About/>
+        <AboutSection/>
+        <Instagram/>
+        {/* <About/>
         <OurJobs/>
         <Instagram/>
         <OurTeam/>
-        <ArtistsContainer/>
+        <ArtistsContainer/> */}
     </div>
   )
 }

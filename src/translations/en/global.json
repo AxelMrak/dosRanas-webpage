@@ -39,5 +39,12 @@
 		"btn": "Watch video",
 		"btn2": "Contract",
 		"p": "Meet the artists we have worked with"
+	},
+	"equipment": {
+		"title": "Equipment",
+		"text": "We have the best equipment on the market to provide a high quality professional service."
+	},
+	"instagram": {
+		"text": "On our official Instagram you will find exclusive content about our work. In addition, we have backstages so you can see behind the scenes of our productions."
 	}
 }
