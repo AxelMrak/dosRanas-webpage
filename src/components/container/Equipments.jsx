@@ -5,7 +5,7 @@ import Equipment from '../pure/Equipment';
 
 const items = [
   {
-    name: 'Sony HDC-1500R',
+    name: 'Sony X300R',
     img: 'https://sp.sony-europe.com/da/1030/305928.jpeg'
   },
   {
@@ -25,7 +25,7 @@ function Equipments() {
       <div className='equipments-container-2'>
         {
           items.map(item => 
-            <Equipment name={item.name} img={item.img}/>
+            <Equipment key={item.name} name={item.name} img={item.img}/>
           )
         }
       </div>

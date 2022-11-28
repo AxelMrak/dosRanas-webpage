@@ -20,6 +20,7 @@ export const cartSlice = createSlice({
       };
       if (state.cart.some(elem => elem.id === action.payload.id) === false) {
         state.cart.push(artistToCart)
+        console.log(artistToCart)
         state.includes = false
       } else if (state.cart.some(elem => elem.id === action.payload.id) === true) {
         state.includes = true

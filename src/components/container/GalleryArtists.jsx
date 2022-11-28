@@ -53,7 +53,7 @@ function GalleryArtists() {
       {
         artists.map((artist, index) => 
         <SwiperSlide key={index}>
-          <Artist name={artist.name} video={artist.url} img={artist.image}/>
+          <Artist id={index} name={artist.name} video={artist.url} img={artist.image}/>
         </SwiperSlide>
         )
       }
@@ -62,4 +62,4 @@ function GalleryArtists() {
   )
 }
 
-export default GalleryArtists
+export default GalleryArtists;

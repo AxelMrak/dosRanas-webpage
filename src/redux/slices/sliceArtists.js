@@ -69,18 +69,6 @@ export const artistsSlice = createSlice({
         // Reducer que resetea el estado que contiene los artistas filtrados
         resetArtists: (state) => {
             state.artistsFiltered = [];
-        },
-        buyArtist: (state, action) => {
-            let artistToCart = {
-                index: action.payload.index,
-                name: action.payload.name,
-                img: action.payload.img
-            };
-            if (state.artists.some(elem => elem.id === action.payload.id) === false) {
-                state.artistsCart.push(artistToCart)
-            } else {
-                null
-            } 
         }
     }
 });

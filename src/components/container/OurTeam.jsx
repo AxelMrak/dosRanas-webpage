@@ -33,7 +33,7 @@ function OurTeam() {
         <div className='staff-container'>
           {
             team.map(item => 
-              <StaffUnit name={item.name} img={item.img}/>
+              <StaffUnit key={item.name} name={item.name} img={item.img}/>
             )
           }
         </div>
