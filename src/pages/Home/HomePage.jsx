@@ -12,6 +12,7 @@ import { useDispatch } from 'react-redux';
 import { resetArtists } from '../../redux/slices/sliceArtists';
 import OurTeam from '../../components/container/OurTeam';
 import GalleryArtists from '../../components/container/GalleryArtists';
+import MainSection from '../../components/sections/MainSection';
 
 function HomePage() {
 
@@ -26,8 +27,7 @@ function HomePage() {
 
   return (
     <div className='home-main-container'>
-        <Main/>
-        <GalleryArtists/>
+        <MainSection/>
         <About/>
         <OurJobs/>
         <Instagram/>
