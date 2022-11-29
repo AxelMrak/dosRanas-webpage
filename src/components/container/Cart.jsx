@@ -1,6 +1,6 @@
 // Importaciones por defecto
 import React, { useState } from 'react';
-import Badge  from 'rsuite/Badge';
+import Badge from 'rsuite/Badge';
 // Importaciones de dependencias
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useTranslation } from 'react-i18next';
@@ -27,9 +27,9 @@ function Cart() {
 
   return (
     <>
-        <Badge className='badge-count' content={artistsCart.length}>
-          <img className='cart-ico' width='40px' src={cartIco} onClick={handleShow}></img>
-        </Badge>
+      <Badge className='badge-count' content={artistsCart.length}>
+        <img className='cart-ico' width='40px' src={cartIco} onClick={handleShow}></img>
+      </Badge>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>{t("header.cartTitle")}</Offcanvas.Title>
@@ -40,19 +40,22 @@ function Cart() {
             {
               artistsCart.map(artist =>
                 <li key={artist.name} className='item-unit-list'>
-                  <img src={artist.img} width='80px' />
+                  <img src={artist.img} width='80px' height='80px'/>
                   <p>{artist.name}</p>
                   <span onClick={() => dispatch(deleteArtist(artist.id))}>❌</span>
                 </li>
               )
             }
           </ul>
-          {
-            artistsCart.length > 1 ? <p className='reset-button' onClick={() => dispatch(resetCart())}>{ t("header.cartReset") }</p> : null
-          }
-          {
-            artistsCart.length >= 1 ? <button className='btn btn-primary'>{ t("header.cartSubmit") }</button> : null
-          }
+          <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: '1rem', margin: '1rem' }}>
+            {
+              artistsCart.length > 1 ? <button className='btn btn-danger' onClick={() => dispatch(resetCart())}>{t("header.cartReset")}</button> : null
+            }
+            {
+              artistsCart.length >= 1 ? <button className='btn btn-primary'>{t("header.cartSubmit")}</button> : null
+            }
+          </div>
+
         </Offcanvas.Body>
       </Offcanvas>
     </>
