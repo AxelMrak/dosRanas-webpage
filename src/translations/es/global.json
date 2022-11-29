@@ -11,7 +11,9 @@
 		"artists": "Artistas",
 		"search": "Artistas, servicios, staff, etc.",
 		"searchBtn": "Buscar",
-		"cartTitle": "Carrito"
+		"cartTitle": "Carrito",
+		"cartReset": "Borrar todo",
+		"cartSubmit": "Solicitar cotización"
 	},
 	"slider": {
 		"title1": "Dos Ranas",
@@ -38,7 +40,7 @@
 		"title": "Artistas",
 		"btn": "Ver video",
 		"btn2": "Contratar",
-		"p": "Conoce los artistas con los que hemos trabajado"
+		"p": "Te acercamos a tus artistas favoritos para que puedas tenerlos en tu evento y puedas vivir una experiencia inigualable."
 	},
 	"equipment": {
 		"title": "Equipamiento",

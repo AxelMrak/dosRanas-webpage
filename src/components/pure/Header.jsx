@@ -30,7 +30,7 @@ function Header() {
     };
 
     return (
-        <nav className='navbar'>
+        <nav className='navbar' id='top'>
             <div className='brand'>
                 <Link to='/'>
                     <img src={logo} width='100' />
@@ -46,9 +46,6 @@ function Header() {
                 { t("header.menu") }
                 </button>
             </div>
-            
-
-            
             {showMenu === true ?
                 <div className='collapsible'>
                     <div className='nav'>

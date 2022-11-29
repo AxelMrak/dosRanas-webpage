@@ -11,7 +11,9 @@
 		"artists": "Artists",
 		"search": "Artists, services, staff, etc.",
 		"searchBtn": "Search",
-		"cartTitle": "Cart"
+		"cartTitle": "Cart",
+		"cartReset": "Remove all",
+		"cartSubmit": "Request a quote"
 	},
 	"slider": {
 		"title1": "Dos Ranas",
@@ -38,7 +40,7 @@
 		"title": "Artists",
 		"btn": "Watch video",
 		"btn2": "Contract",
-		"p": "Meet the artists we have worked with"
+		"p": "We bring you closer to your favorite artists so that you can have them at your event and you can live an incomparable experience."
 	},
 	"equipment": {
 		"title": "Equipment",

@@ -20,6 +20,7 @@ function ArtistsContainer() {
   return (
     <div className='artists-section-container'>
       <h2>{t("artists.title")}</h2>
+      <p>{t("artists.p")}</p>
         <div className='artists-main-container'>
           {/*  Si el estado de artistas filtrados es mayor a un array vacio se rendereizan los artistas filtrados. Y sino, osea no se ha realizado una busqueda, se muestran todos los artistas  */}
           {
