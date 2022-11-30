@@ -10,8 +10,13 @@ import video1 from '../../assets/videos/Video demo 1.mp4';
 import video2 from '../../assets/videos/Video demo 2.mp4';
 import video3 from '../../assets/videos/Video demo 3.mp4';
 
-
+/**
+ * ? Componente contenedor que muestra trabajos de Dos Ranas
+ * @returns Devuelve componente contenedor con videos e imagenes de los trabajos
+ * ! Actualmente no esta renderizado
+ */
 function OurJobs() {
+  
     // Texto de traducciones
     const { t } = useTranslation("global");
 

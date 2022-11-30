@@ -1,8 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 // Estado inicial
 const initialState = {
-  cart: [],
-  includes: false,
+  cart: []
 };
 
 export const cartSlice = createSlice({
@@ -18,13 +17,10 @@ export const cartSlice = createSlice({
         name: action.payload.name,
         img: action.payload.img,
       };
-      if (state.cart.some(elem => elem.id === action.payload.id) === false) {
         state.cart.push(artistToCart)
-        console.log(artistToCart)
-        state.includes = false
-      } else if (state.cart.some(elem => elem.id === action.payload.id) === true) {
-        state.includes = true
-      }
+      // } else if (state.cart.some(elem => elem.id === action.payload.id) === true) {
+      //   state.includes = true
+      // }
     },
     deleteArtist: (state, action) => {
       let index = state.cart.findIndex(item => item.id === action.payload.id)

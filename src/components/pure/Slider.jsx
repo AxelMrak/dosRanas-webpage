@@ -13,8 +13,12 @@ import vid3 from '../../assets/gifs/mainVideo3-hd.gif';
  * TODO: Buscar videos de iguales medidas o tamaños para evitar redimension de carousel.
  */
 
-// Carousel de bootstrap para main section
+/**
+ * ? Componente Slider o Carousel de Bootstrap
+ * @returns Slider de Bootstrap con imagenes o videos varios
+ */
 function Slider() {
+
     // Texto de traduccion
     const { t, i18n } = useTranslation("global");
 
@@ -36,7 +40,6 @@ function Slider() {
                 <div className="carousel-item" data-bs-interval="10000">
                     <img src={vid2} className="d-block w-100" alt="..." />
                     <div className="carousel-caption d-md-block">
-
                         <div className='Carrousell-subItems'>
                             <p>{t("slider.title2")}</p>
                             <p className='P-carousell'>{t("slider.text2")}</p>
@@ -51,7 +54,6 @@ function Slider() {
                             <p>{t("slider.title3")}</p>
                             <p className='P-carousell'>{t("slider.text3")}</p>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -64,7 +66,7 @@ function Slider() {
                 <span className="visually-hidden">Next</span>
             </button>
         </div>
-    );
+    )
 };
 
 export default Slider;

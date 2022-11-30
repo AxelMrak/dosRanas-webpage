@@ -8,11 +8,16 @@ import Artist from '../pure/Artist';
 // Importaciones de estilos
 import '../../styles/ArtistsStyles/ArtistsContainer.css';
 
+/**
+ * ? Componente contenedor de Artistas
+ * @returns Componente contenedor de artistas. Va en la pagina artistas (NO CONFUNDIR CON LA GALERIA DE ARTISTAS)
+ */
 function ArtistsContainer() {
 
     //* Estados globales: Artistas y artistas filtrados
     const artists = useSelector(state => state.artists.artists);
     const artistsFiltered = useSelector(state => state.artists.artistsFiltered);
+
     // Texto para traduccion
     const { t } = useTranslation("global");
 
@@ -34,7 +39,7 @@ function ArtistsContainer() {
           }
         </div>
     </div>
-  );
+  )
 };
 
 export default ArtistsContainer;

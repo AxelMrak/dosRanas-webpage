@@ -1,7 +1,4 @@
 {
-	"alert": {
-		"cartAlert": "Ya existe en el carrito"
-	},
 	"header": {
 		"title": "Productora",
 		"menu": "Menú",
@@ -13,7 +10,8 @@
 		"searchBtn": "Buscar",
 		"cartTitle": "Carrito",
 		"cartReset": "Borrar todo",
-		"cartSubmit": "Solicitar cotización"
+		"cartSubmit": "Solicitar cotización",
+		"cartResetAlert": "El carrito ha sido vaciado"
 	},
 	"slider": {
 		"title1": "Dos Ranas",
@@ -32,7 +30,6 @@
 		"title": "Nuestro equipo",
 		"text": "Contamos con un equipo, con más de 10 años de experiencia consolidado de profesionales especializados en la producción técnica de shows, conciertos, recitales, festivales, video musicales, producciones, discografias, representaciòn de artistas, publicidades , documentales, un constante creado de contenidos."
 	},
-
 	"ourJobs": {
 		"title": "Nuestros trabajos"
 	},
@@ -40,7 +37,10 @@
 		"title": "Artistas",
 		"btn": "Ver video",
 		"btn2": "Contratar",
-		"p": "Te acercamos a tus artistas favoritos para que puedas tenerlos en tu evento y puedas vivir una experiencia inigualable."
+		"p": "Te acercamos a tus artistas favoritos para que puedas tenerlos en tu evento y puedas vivir una experiencia inigualable.",
+		"alertBuy": "El artista ha sido añadido al carrito",
+		"alertIncludes": "El artista ya se encuentra en el carrito",
+		"deleteInCartAlert": "El artista ha sido eliminado"
 	},
 	"equipment": {
 		"title": "Equipamiento",

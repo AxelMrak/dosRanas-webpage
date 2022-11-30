@@ -1,8 +1,13 @@
+// Importaciones por defecto
 import React from 'react';
+// Importaciones de dependencias
 import { useTranslation } from 'react-i18next';
-import '../../styles/EquipmentsStyles/EquipmentsStyles.css';
+// Importaciones de componentes
 import Equipment from '../pure/Equipment';
+// Importaciones de estilos
+import '../../styles/EquipmentsStyles/EquipmentsStyles.css';
 
+// Equipamientos (Array de objetos)
 const items = [
   {
     name: 'Sony X300R',
@@ -14,8 +19,12 @@ const items = [
   },
 ];
 
+/*
+ ? Componente contenedor Equipments
+ * @returns Devuelve un componente Equipments contenedor de las unidades Equipment
+ */
 function Equipments() {
-
+  //Texto de traduccion
   const { t } = useTranslation("global");
 
   return (
@@ -31,6 +40,6 @@ function Equipments() {
       </div>
     </div>
   )
-}
+};
 
 export default Equipments;

@@ -13,27 +13,49 @@ import english from '../../assets/icons/english.png';
 import Search from '../container/Search';
 import Cart from '../container/Cart';
 
-
-// Header por bootstrap
+/**
+ * ? Componente Header
+ * @returns Devuelve componente Header
+ */
 function Header() {
 
     // Texto de traduccion y funcion para modificar idioma
     const { t, i18n } = useTranslation("global");
     // Dispatcher de redux toolkit
     const dispatch = useDispatch()
-
+    // Estado que muestra o no el menu desplegable. Por defecto, esta escondido.
     const [showMenu, setShowMenu] = useState(false);
 
-
+    /**
+     * ? Funcion manejadora del estado del menu desplegable
+     */
     const openMenu = () => {
         setShowMenu(!showMenu)
     };
+
+    /**
+     * ? Funcion que devuelve el estado de artista a su estado original cuando volvemos a al inicio. Esto es debido a la funcion de busqueda ya que este muta el estado original de artistas.
+     */
+    const resetArtistsFunc = () => {
+        dispatch(resetArtists())
+    };
+
+    /**
+     * ? Funcion que cambia el lenguaje de la pagina 
+     */
+    const changeLanguageFunc = () => {
+        i18n.language === 'es' ?
+            i18n.changeLanguage("en")
+            :
+            i18n.changeLanguage("es")
+    };
+
 
     return (
         <nav className='navbar' id='top'>
             <div className='brand'>
                 <Link to='/'>
-                    <img src={logo} width='100' />
+                    <img src={logo} width='100' alt='Logo Dos Ranas' />
                 </Link>
                 <div className="container">
                     <div className="glitch" data-text="Dos Ranas">Dos Ranas {t("header.title")}</div>
@@ -43,7 +65,7 @@ function Header() {
             <div className='menu-search'>
                 <Search />
                 <button onClick={openMenu} className='btn-menu'>
-                { t("header.menu") }
+                    {t("header.menu")}
                 </button>
             </div>
             {showMenu === true ?
@@ -53,8 +75,7 @@ function Header() {
                             <li className="nav-item">
                                 {/* Cuando se hace click en el link tambien se resetean los artistas filtrados */}
                                 <Link className='unit-list' to="/artistas"
-                                    onClick={
-                                        () => dispatch(resetArtists())}
+                                    onClick={resetArtistsFunc}
                                 >{t("header.artists")}
                                 </Link>
                             </li>
@@ -71,68 +92,16 @@ function Header() {
                     </div>
                     <div className='others-nav'>
                         <img
-                            src={
-                                i18n.language === 'es' ? spanish : english
-                            }
-                            onClick={
-                                i18n.language === 'es' ? () => i18n.changeLanguage("en") : () => i18n.changeLanguage("es")
-                            }
+                            src={i18n.language === 'es' ? spanish : english}
+                            onClick={changeLanguageFunc}
                         />
                         <Cart />
                     </div>
                 </div>
                 : null
             }
-
-
-
         </nav>
-        // <nav className="navbar navbar-dark navbar-expand-lg bg-black gx-4">
-        //     <div className="container-fluid">
-        //         <Link className="navbar-brand" to='/'>
-        //             <img src={logo} width='100' />
-        //             Dos Ranas Productora
-        //         </Link>
-        //         <button className="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-        //             <span>{t("header.menu")}</span>
-        //         </button>
-        //         <div className="collapse" id="collapseExample">
-        //             <div className='navbar-collapse-body'>
-        //                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-        //                     <li className="nav-item">
-        //                         {/* Cuando se hace click en el link tambien se resetean los artistas filtrados */}
-        //                         <Link className='unit-list' to="/artistas"
-        //                             onClick={
-        //                                 () => dispatch(resetArtists())}
-        //                         >{t("header.artists")}
-        //                         </Link>
-        //                     </li>
-        //                     <li className="nav-item">
-        //                         <Link className='unit-list' to="/servicios">{t("header.services")}</Link>
-        //                     </li>
-        //                     <li className="nav-item">
-        //                         <Link className='unit-list' to="/staff">{t("header.staff")}</Link>
-        //                     </li>
-        //                     <li className="nav-item">
-        //                         <Link className='unit-list' to="/contacto">{t("header.contact")}</Link>
-        //                     </li>
-        //                 </ul>
-        //                 <Search />
-        //                 {/* Al hacer click se cambia el idioma con el .changeLanguage, y, a su vez, la bandera tambien cambia dependiendo del idioma actual que es detectado por el metodo .language que es pasado a un operador ternario */}
-        //                 <img
-        //                     src={
-        //                         i18n.language === 'es' ? spanish : english
-        //                     }
-        //                     onClick={
-        //                         i18n.language === 'es' ? () => i18n.changeLanguage("en") : () => i18n.changeLanguage("es")
-        //                     }
-        //                 />
-        //                 <Cart />
-        //             </div>
-        //         </div>
-        //     </div>
-        // </nav >
-    );
+    )
 };
 
 export default Header;

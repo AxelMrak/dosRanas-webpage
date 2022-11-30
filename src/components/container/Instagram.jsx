@@ -1,11 +1,19 @@
 // Importaciones por defecto
 import React from 'react';
+// Importaciones de dependencias
 import { useTranslation } from 'react-i18next';
+// Importaciones de imagenes
 import logo from '../../assets/img/instagram-word-logo.png';
+// Importaciones de estilos
 import '../../styles/InstagramStyles/InstagramStyles.css';
 
+/**
+ * ? Componente Instagram con Script
+ * @returns Devuelve un componente Instagram que muestra el feed del instagram empresarial
+ */
 function Instagram() {
 
+    // Texto de traduccion
     const { t } = useTranslation("global");
 
     return (

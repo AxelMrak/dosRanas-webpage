@@ -6,22 +6,20 @@ import Header from './components/pure/Header';
 import ArtistsPage from './pages/Artistas/ArtistsPage';
 import Footer from './components/pure/Footer';
 // Importaciones de dependencias
-import { useSelector } from 'react-redux';
 import { useEffect, useState } from 'react';
-import { Alert } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 // Importaciones de estilos
 import './styles/AppStyles/App.css';
 import WhatsAppGlobal from './components/container/WhatsAppIcon';
 import ArrowUp from './components/pure/ArrowUp';
+import { ToastContainer } from 'react-toastify';
+
 
 
 function App() {
 
   // Texto de traduccion
   const { t } = useTranslation("global")
-  // Estado global que indica la existencia de un elemento en el carrito
-  const includes = useSelector(state => state.cart.includes);
 
   const [width, setWidth] = useState();
 
@@ -35,9 +33,7 @@ function App() {
 
         <Header />
 
-        {
-          includes === true ? <Alert variant='primary'>{t("alert.cartAlert")}</Alert> : null
-        }
+       <ToastContainer/>
         {/* Se muestra una alerta dependiendo si includes es true, esto significa si queremos sumar al carrito un elemento ya existente */}
 
         <Routes>

@@ -7,6 +7,10 @@ import '../../styles/AboutStyles/AboutStyles.css';
 // Importaciones de imagenes
 import logo from '../../assets/Logo provisorio.svg'
 
+/**
+ * ? Componente About 
+ * @returns Devuelve subseccion About. Presenta a la empresa.
+ */
 function About() {
   
     // Texto para traduccion
@@ -18,7 +22,7 @@ function About() {
         <h2>{t("about.title")}</h2>
         <p>{t("about.text")}</p>
     </div>
-  );
+  )
 };
 
 export default About;
