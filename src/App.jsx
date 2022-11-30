@@ -5,24 +5,27 @@ import HomePage from './pages/Home/HomePage';
 import Header from './components/pure/Header';
 import ArtistsPage from './pages/Artistas/ArtistsPage';
 import Footer from './components/pure/Footer';
+import WhatsAppGlobal from './components/container/WhatsAppIcon';
+import ArrowUp from './components/pure/ArrowUp';
 // Importaciones de dependencias
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { ToastContainer } from 'react-toastify';
 // Importaciones de estilos
 import './styles/AppStyles/App.css';
-import WhatsAppGlobal from './components/container/WhatsAppIcon';
-import ArrowUp from './components/pure/ArrowUp';
-import { ToastContainer } from 'react-toastify';
 
-
-
+/*
+ ? Componente principal de la aplicacion
+ */
 function App() {
 
   // Texto de traduccion
   const { t } = useTranslation("global")
 
+  // Estado local y su manejador
   const [width, setWidth] = useState();
 
+  // Comprueba el ancho de la ventana cuando se renderiza el componente
   useEffect(() => {
     setWidth(window.innerWidth);
   });
@@ -30,12 +33,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-
         <Header />
-
-       <ToastContainer/>
         {/* Se muestra una alerta dependiendo si includes es true, esto significa si queremos sumar al carrito un elemento ya existente */}
-
+        <ToastContainer />
         <Routes>
           {/* HomePage */}
           <Route path="/" element={<HomePage />} />
@@ -51,13 +51,14 @@ function App() {
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>
       </div>
+      {/* Se muestra la flecha que lleva al top de la pagina cuando estamos en MOBILE */}
       {
         width < 800 ? <ArrowUp /> : null
       }
       <WhatsAppGlobal />
       <Footer />
     </Router>
-  );
+  )
 };
 
 export default App;
