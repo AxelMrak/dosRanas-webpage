@@ -1,9 +1,8 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "../../styles/EventsStyles/Events.css";
-import ButtonQuote from "../pure/ButtonQuote";
-import Event from "../pure/Event";
-import Quote from "../pure/Quote";
+import Event from "../events/Event";
+import Quote from "../events/Quote";
 
 const items = [
   {
@@ -28,7 +27,7 @@ const items = [
   },
 ];
 
-function Events() {
+function EventsSection() {
   const { t } = useTranslation("global");
 
   return (
@@ -39,7 +38,7 @@ function Events() {
       <p>{t("event.text2")}</p>
       <div className="events-container-2">
         {items.map((item) => (
-          <Event name={item.name} text={item.text} img={item.img} />
+          <Event key={item.name} name={item.name} text={item.text} img={item.img} />
         ))}
       </div>
       <Quote/>
@@ -47,4 +46,4 @@ function Events() {
   );
 }
 
-export default Events;
+export default EventsSection;

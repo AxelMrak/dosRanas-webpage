@@ -9,6 +9,7 @@ import { resetArtists } from '../../redux/slices/sliceArtists';
 import Instagram from '../../components/instagram/Instagram';
 import MainSection from '../../components/sections/MainSection';
 import AboutSection from '../../components/sections/AboutSection';
+import EventsSection from "../../components/sections/EventsSection";
 
 function HomePage() {
   // Dispatcher de redux toolkit
@@ -24,7 +25,7 @@ function HomePage() {
       <MainSection />
       <AboutSection />
       <Instagram />
-      <Events />
+      <EventsSection />
       {/* <About/>
         <OurJobs/>
         <Instagram/>
