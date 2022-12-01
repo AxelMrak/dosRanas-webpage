@@ -6,13 +6,14 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
+import ItemCart from './ItemCart';
 // Importaciones de acciones de Redux/Toolkit
 import { deleteArtist, resetCart } from '../../redux/slices/sliceCart';
 // Importaciones de imagenes
 import cartIco from '../../assets/icons/cart-ico.png';
 // Importaciones de estilos
 import '../../styles/CartCanvaStyles/CartCanvaStyle.css';
-import ItemCart from './ItemCart';
+
 
 
 /*
