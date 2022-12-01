@@ -4,8 +4,10 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 // Importaciones de estilos
 import '../../styles/OurTeamStyles/OurTeamStyles.css';
-import StaffUnit from '../pure/StaffUnit';
+// Importaciones de componentes
+import StaffUnit from './StaffUnit';
 
+// Array de objetos que representan a los miembros del Staff
 const team = [
   {
     name: 'Alejandro Martinez',
@@ -19,8 +21,12 @@ const team = [
     name: 'Enzo Fernandez',
     img: 'https://randomuser.me/api/portraits/men/36.jpg'
   }
-]
+];
 
+/**
+ * ? Componente contenedor de los miembros del Staff
+ * @returns Devuelve componente contenedor de los miembros del Staff
+ */
 function OurTeam() {
   
     // Texto para traduccion
@@ -33,12 +39,12 @@ function OurTeam() {
         <div className='staff-container'>
           {
             team.map(item => 
-              <StaffUnit name={item.name} img={item.img}/>
+              <StaffUnit key={item.name} name={item.name} img={item.img}/>
             )
           }
         </div>
     </section>
-  );
+  )
 };
 
 export default OurTeam;

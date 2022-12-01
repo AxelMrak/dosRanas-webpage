@@ -624,8 +624,9 @@
 
 .btn-menu {
   font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2rem;
   padding: 0.7rem;
-  border-radius: 20px;
+  border-radius: 15px;
   border: 1px solid black;
   transition: all 1s;
 }

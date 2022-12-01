@@ -2,37 +2,40 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Importaciones de paginas y componentes
 import HomePage from './pages/Home/HomePage';
-import Header from './components/pure/Header';
+import Header from './components/globals/Header';
 import ArtistsPage from './pages/Artistas/ArtistsPage';
-import Footer from './components/pure/Footer';
+import Footer from './components/globals/Footer';
+import WhatsAppGlobal from './components/globals/WhatsAppIcon';
+import ArrowUp from './components/globals/ArrowUp';
 // Importaciones de dependencias
-import { useSelector } from 'react-redux';
-import { useState } from 'react';
-import { Alert } from 'react-bootstrap';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { ToastContainer } from 'react-toastify';
 // Importaciones de estilos
 import './styles/AppStyles/App.css';
-import WhatsAppGlobal from './components/container/WhatsAppIcon';
 
-
+/*
+ ? Componente principal de la aplicacion
+ */
 function App() {
 
   // Texto de traduccion
-  const { t } = useTranslation("global") 
-  // Estado global que indica la existencia de un elemento en el carrito
-  const includes = useSelector(state => state.cart.includes);
+  const { t } = useTranslation("global")
+
+  // Estado local y su manejador
+  const [width, setWidth] = useState();
+
+  // Comprueba el ancho de la ventana cuando se renderiza el componente
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  });
 
   return (
     <Router>
       <div className="App">
-        
         <Header />
-
-        {   
-          includes === true ? <Alert variant='primary'>{ t("alert.cartAlert") }</Alert> : null
-        }
         {/* Se muestra una alerta dependiendo si includes es true, esto significa si queremos sumar al carrito un elemento ya existente */}
-        
+        <ToastContainer />
         <Routes>
           {/* HomePage */}
           <Route path="/" element={<HomePage />} />
@@ -49,9 +52,14 @@ function App() {
         </Routes>
         <WhatsAppGlobal/>
       </div>
+      {/* Se muestra la flecha que lleva al top de la pagina cuando estamos en MOBILE */}
+      {
+        width < 800 ? <ArrowUp /> : null
+      }
+      <WhatsAppGlobal />
       <Footer />
     </Router>
-  );
+  )
 };
 
 export default App;

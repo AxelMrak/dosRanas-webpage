@@ -19,14 +19,31 @@
 }
 
 .artists-section-container h2 {
+    text-align: center;
     margin: 3rem;
     color: white;
     font-size: $SubtitleSize;
+    font-family: $Subtitulo;
+}
+
+.artists-section-container p {
+    color: white;
+    font-family: $Texto;
+    font-size: $TextSize;
 }
 
 @include small() {
     .artists-main-container {
         flex-direction: column;
-        align-items: baseline;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .artists-section-container {
+        text-align: center;
+    }
+
+    .artists-section-container p {
+        width: 80%;
     }
 }

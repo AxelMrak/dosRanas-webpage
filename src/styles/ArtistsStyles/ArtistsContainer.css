@@ -20,14 +20,29 @@
 }
 
 .artists-section-container h2 {
+  text-align: center;
   margin: 3rem;
   color: white;
   font-size: 3rem;
+  font-family: "Source Sans Pro", serif;
+}
+
+.artists-section-container p {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 767.98px) {
   .artists-main-container {
     flex-direction: column;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
+  }
+  .artists-section-container {
+    text-align: center;
+  }
+  .artists-section-container p {
+    width: 80%;
   }
 }/*# sourceMappingURL=ArtistsContainer.css.map */
