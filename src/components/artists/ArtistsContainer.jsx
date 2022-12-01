@@ -33,6 +33,7 @@ function ArtistsContainer() {
         {/* Dos if */}
         {/*  Si el estado de artistas filtrados es mayor a un array vacio se rendereizan los artistas filtrados. Y sino, osea no se ha realizado una busqueda, se muestran todos los artistas  */}
         {/* Luego, si el lenguaje es spagnol se renderiza el estado global en ese idioma, y sino en ingles */}
+        {/* Dentro de la iteracion de cada uno encontramos otra condicion que renderiza solo los artistas del estado global */}
         {
           artistsFiltered > [] ?
             artistsFiltered.map((artist, index) =>
