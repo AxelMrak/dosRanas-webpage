@@ -1,8 +1,8 @@
 // Importaciones por defecto
 import React from 'react';
 // Importacion de componentes
-import Slider from '../pure/Slider';
-import GalleryArtists from '../container/GalleryArtists';
+import Slider from '../carousel/Slider';
+import GalleryArtists from '../../components/artists/GalleryArtists';
 // Importacion de estilos
 import '../../styles/MainStyles/MainStyles.css';
 

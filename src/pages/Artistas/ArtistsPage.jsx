@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import ArtistsContainer from '../../components/container/ArtistsContainer';
+import ArtistsContainer from '../../components/artists/ArtistsContainer';
 
 function ArtistsPage() {
 

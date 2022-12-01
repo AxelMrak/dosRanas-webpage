@@ -12,6 +12,7 @@ import { deleteArtist, resetCart } from '../../redux/slices/sliceCart';
 import cartIco from '../../assets/icons/cart-ico.png';
 // Importaciones de estilos
 import '../../styles/CartCanvaStyles/CartCanvaStyle.css';
+import ItemCart from './ItemCart';
 
 
 /*
@@ -54,25 +55,6 @@ function Cart() {
     })
   };
 
-  /**
-   * ? Funcion que elimina un artista en particular del carrito
-   * Tambien muestra un alerta
-   * @param { Recibe el id del artista para identificar cual eliminar } id 
-   */
-  const deleteArtistsFunc = (id) => {
-    dispatch(deleteArtist(id))
-    toast.info(t("artists.deleteInCartAlert"), {
-      position: "top-right",
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    })
-  }
-
   return (
     <>
       <Badge className='badge-count' content={artistsCart.length}>
@@ -87,16 +69,12 @@ function Cart() {
           <ul className='items-list'>
             {
               artistsCart.map(artist =>
-                <li key={artist.name} className='item-unit-list'>
-                  <img src={artist.img} width='80px' height='80px' />
-                  <p>{artist.name}</p>
-                  <span onClick={() => deleteArtistsFunc(artist.id)}>❌</span>
-                </li>
+                <ItemCart key={artist.id} id={artist.id} name={artist.name} img={artist.img}/>
               )
             }
           </ul>
           {/* TODO: These styles should be in styles apart */}
-          <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: '1rem', margin: '1rem' }}>
+          <div className='buttons-body-offcanvas'>
             {
               artistsCart.length > 1 ?
                 <button className='btn btn-danger' onClick={resetCartFunc}>{t("header.cartReset")}</button>

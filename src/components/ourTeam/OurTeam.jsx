@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 // Importaciones de estilos
 import '../../styles/OurTeamStyles/OurTeamStyles.css';
 // Importaciones de componentes
-import StaffUnit from '../pure/StaffUnit';
+import StaffUnit from './StaffUnit';
 
 // Array de objetos que representan a los miembros del Staff
 const team = [

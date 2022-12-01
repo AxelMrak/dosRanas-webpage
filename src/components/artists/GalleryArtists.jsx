@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Importaciones de componentes
-import Artist from "../pure/Artist";
+import Artist from "../artists/Artist";
 
 /**
  * ? Componente contenedor de artistas con galeria

@@ -1,9 +1,9 @@
 // Importaciones por defecto
 import React from 'react';
 // Importaciones de componentes que van en la seccion
-import About from '../container/About';
-import Equipments from '../container/Equipments';
-import OurTeam from '../container/OurTeam';
+import About from '../aboutUs/About';
+import Equipments from '../equipments/Equipments';
+import OurTeam from '../ourTeam/OurTeam';
 // Importacion de estilos
 import '../../styles/AboutSectionStyles/AboutSectionStyles.css';
 

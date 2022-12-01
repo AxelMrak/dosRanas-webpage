@@ -3,7 +3,7 @@ import React from 'react';
 // Importaciones de dependencias
 import { useTranslation } from 'react-i18next';
 // Importaciones de componentes
-import Equipment from '../pure/Equipment';
+import Equipment from './Equipment';
 // Importaciones de estilos
 import '../../styles/EquipmentsStyles/EquipmentsStyles.css';
 

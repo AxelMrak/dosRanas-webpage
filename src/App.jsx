@@ -2,11 +2,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Importaciones de paginas y componentes
 import HomePage from './pages/Home/HomePage';
-import Header from './components/pure/Header';
+import Header from './components/globals/Header';
 import ArtistsPage from './pages/Artistas/ArtistsPage';
-import Footer from './components/pure/Footer';
-import WhatsAppGlobal from './components/container/WhatsAppIcon';
-import ArrowUp from './components/pure/ArrowUp';
+import Footer from './components/globals/Footer';
+import WhatsAppGlobal from './components/globals/WhatsAppIcon';
+import ArrowUp from './components/globals/ArrowUp';
 // Importaciones de dependencias
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';

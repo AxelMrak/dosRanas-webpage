@@ -10,8 +10,8 @@ import logo from '../../assets/Logo provisorio.svg';
 import spanish from '../../assets/icons/spanish.png';
 import english from '../../assets/icons/english.png';
 //Importaciones de componentes
-import Search from '../container/Search';
-import Cart from '../container/Cart';
+import Search from '../search/Search';
+import Cart from '../cart/Cart';
 
 /**
  * ? Componente Header

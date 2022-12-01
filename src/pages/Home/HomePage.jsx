@@ -2,15 +2,11 @@
 import React, { useEffect } from 'react';
 // Importaciones de estilos
 import '../../styles/HomePageStyles/HomePageStyles.css';
-// Importaciones de componentes
-import About from '../../components/container/About';
-import OurJobs from '../../components/container/OurJobs';
-import Instagram from '../../components/container/Instagram';
-import ArtistsContainer from '../../components/container/ArtistsContainer';
+// Importaciones de dependencias
 import { useDispatch } from 'react-redux';
 import { resetArtists } from '../../redux/slices/sliceArtists';
-import OurTeam from '../../components/container/OurTeam';
-import GalleryArtists from '../../components/container/GalleryArtists';
+// Importaciones de componentes
+import Instagram from '../../components/instagram/Instagram';
 import MainSection from '../../components/sections/MainSection';
 import AboutSection from '../../components/sections/AboutSection';
 
