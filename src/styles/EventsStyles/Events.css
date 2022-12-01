@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+/* Tamaños */
+.events-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  row-gap: 1rem;
+  padding: 1rem;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.events-container h2 {
+  margin-top: 5%;
+  font-family: "Source Sans Pro", serif;
+  font-size: 3rem;
+}
+
+.events-container p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  max-width: 80%;
+}
+
+.events-container-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}/*# sourceMappingURL=Events.css.map */

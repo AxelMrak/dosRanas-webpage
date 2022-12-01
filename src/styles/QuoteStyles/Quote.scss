@@ -1,0 +1,33 @@
+@import '../mixins';
+@import '../variables';
+
+.text-quote {
+  max-width: 60%;
+}
+
+.quote-unit-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $ColorTerciario;
+    color: $ColorSecundario;
+    padding: 3rem;
+    margin: 1rem;
+    border-radius: 25px;
+    max-width: 60%;
+    
+  }
+
+  /*
+  .event-unit-card h3 {
+    font-family: $Subtitulo;
+    font-size: $TextSize;
+    padding: 5%;
+  }
+  
+  .event-img{
+      border-radius: 25px;
+      margin-top: 5%;
+   
+  }*/

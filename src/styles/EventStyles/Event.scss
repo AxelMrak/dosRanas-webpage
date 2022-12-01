@@ -1,0 +1,30 @@
+@import '../mixins';
+@import '../variables';
+
+.event-unit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $ColorTerciario;
+  color: $ColorSecundario;
+  padding: 1rem;
+  margin: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 25px;
+}
+
+.event-unit-card h4 {
+  font-family: $Subtitulo;
+  font-size: $TextSize;
+  max-width: 80%;
+  padding: 5%;
+}
+
+.event-img{
+    border-radius: 25px;
+    margin-top: 5%;
+ 
+}
+
+ 

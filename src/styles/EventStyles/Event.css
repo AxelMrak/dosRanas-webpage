@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+/* Tamaños */
+.event-unit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 1rem;
+  margin: 1rem;
+  padding-bottom: 2rem;
+  border-radius: 25px;
+}
+
+.event-unit-card h4 {
+  font-family: "Source Sans Pro", serif;
+  font-size: 1.5rem;
+  max-width: 80%;
+  padding: 5%;
+}
+
+.event-img {
+  border-radius: 25px;
+  margin-top: 5%;
+}/*# sourceMappingURL=Event.css.map */

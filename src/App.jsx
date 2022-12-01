@@ -47,8 +47,8 @@ function App() {
           {/* 404 */}
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>
+        <WhatsAppGlobal/>
       </div>
-      <WhatsAppGlobal/>
       <Footer />
     </Router>
   );

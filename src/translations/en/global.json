@@ -46,5 +46,12 @@
 	},
 	"instagram": {
 		"text": "On our official Instagram you will find exclusive content about our work. In addition, we have backstages so you can see behind the scenes of our productions."
+	},
+	"event": {
+		"title": "Organize your own event!",
+		"text1": "Everybody, sometimes, throws an event, party or corporate event: an adventure team building, an inspirational conference, the annual staff party, a ground-breaking wedding or just a birthday party. At Dos Ranas we will help you and quote your ideal event to make it unforgettable.",
+		"title2": "Services that we can offer you:",
+		"text2": "We can offer you a wide variety of services of the highest quality to maximize the quality of your event.",
+		"buttonQuote": "Quote your event"
 	}
 }

@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+/* Tamaños */
+.text-quote {
+  max-width: 60%;
+}
+
+.quote-unit-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 3rem;
+  margin: 1rem;
+  border-radius: 25px;
+  max-width: 60%;
+}
+
+/*
+.event-unit-card h3 {
+  font-family: $Subtitulo;
+  font-size: $TextSize;
+  padding: 5%;
+}
+
+.event-img{
+    border-radius: 25px;
+    margin-top: 5%;
+
+}*//*# sourceMappingURL=Quote.css.map */
