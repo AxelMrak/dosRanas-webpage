@@ -11,6 +11,7 @@ import '../../styles/MainStyles/MainStyles.css';
  * @returns Devuelve la seccion principal que estará en la parte superior de la HomePage
  */
 function MainSection() {
+
   return (
     <main>
       <Slider/>
