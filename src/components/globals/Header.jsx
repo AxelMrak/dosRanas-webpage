@@ -100,7 +100,7 @@ function Header() {
                 </div>
                 : null
             }
-        </nav>
+        </nav> 
     )
 };
 

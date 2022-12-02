@@ -3,6 +3,7 @@
 /* FUENTES TIPOGRAFICAS */
 /* Tamaños */
 .event-unit-card {
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,16 +14,36 @@
   margin: 1rem;
   padding-bottom: 2rem;
   border-radius: 25px;
+  transition: 1s all;
+}
+
+.event-unit-card:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 1px solid white;
+  box-shadow: 1px 1px 2px 3px white;
 }
 
 .event-unit-card h4 {
   font-family: "Source Sans Pro", serif;
+  font-size: 3rem;
+}
+
+.event-unit-card p {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
   max-width: 80%;
   padding: 5%;
 }
 
 .event-img {
+  width: 100%;
   border-radius: 25px;
   margin-top: 5%;
+}
+
+@media (max-width: 767.98px) {
+  .event-unit-card {
+    width: 80%;
+  }
 }/*# sourceMappingURL=Event.css.map */

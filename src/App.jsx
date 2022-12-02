@@ -22,13 +22,6 @@ function App() {
   // Texto de traduccion
   const { t } = useTranslation("global")
 
-  // Estado local y su manejador
-  const [width, setWidth] = useState();
-
-  // Comprueba el ancho de la ventana cuando se renderiza el componente
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  });
 
   return (
     <Router>
@@ -50,14 +43,9 @@ function App() {
           {/* 404 */}
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>
-        <WhatsAppGlobal/>
+        <WhatsAppGlobal />
+        <Footer />
       </div>
-      {/* Se muestra la flecha que lleva al top de la pagina cuando estamos en MOBILE */}
-      {
-        width < 800 ? <ArrowUp /> : null
-      }
-      <WhatsAppGlobal />
-      <Footer />
     </Router>
   )
 };

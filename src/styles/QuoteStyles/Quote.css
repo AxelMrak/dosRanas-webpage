@@ -3,10 +3,13 @@
 /* FUENTES TIPOGRAFICAS */
 /* Tamaños */
 .text-quote {
-  max-width: 60%;
+  width: 40%;
 }
 
 .quote-unit-card {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,18 +19,27 @@
   padding: 3rem;
   margin: 1rem;
   border-radius: 25px;
-  max-width: 60%;
+  row-gap: 2rem;
 }
 
+@media (max-width: 767.98px) {
+  .text-quote {
+    width: 90%;
+  }
+  .quote-unit-card {
+    width: 90%;
+    flex-direction: column;
+  }
+}
 /*
-.event-unit-card h3 {
-  font-family: $Subtitulo;
-  font-size: $TextSize;
-  padding: 5%;
-}
+  .event-unit-card h3 {
+    font-family: $Subtitulo;
+    font-size: $TextSize;
+    padding: 5%;
+  }
 
-.event-img{
-    border-radius: 25px;
-    margin-top: 5%;
+  .event-img{
+      border-radius: 25px;
+      margin-top: 5%;
 
-}*//*# sourceMappingURL=Quote.css.map */
+  }*//*# sourceMappingURL=Quote.css.map */

@@ -1,8 +1,12 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux'
 import { toast } from 'react-toastify';
+import { deleteArtist } from '../../redux/slices/sliceCart';
 
 function ItemCart({ id, name, img }) {
+
+  const { t } = useTranslation("global");
 
   // Dispatcher de acciones de Redux ToolKit
   const dispatch = useDispatch();

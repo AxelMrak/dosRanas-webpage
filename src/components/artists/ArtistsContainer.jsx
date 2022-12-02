@@ -19,11 +19,9 @@ function ArtistsContainer() {
 
 
   //* Estados globales: Artistas y artistas filtrados y filtrados por idioma en estado global
-  const globalEs = useSelector(state => state.global.globalEs);
-  const globalEn = useSelector(state => state.global.globalEn);
+  const globalEs = useSelector(state => state.globalSpanish.objectsSpanish);
+  const globalEn = useSelector(state => state.globalEnglish.objectsEnglish);
   const artistsFiltered = useSelector(state => state.artists.artistsFiltered);
-
-
 
   return (
     <div className='artists-section-container'>

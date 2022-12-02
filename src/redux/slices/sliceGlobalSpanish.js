@@ -47,22 +47,38 @@ const initialState = {
     {
       type: 'service',
       name: 'Grabacion de videoclip',
-      description: ''
+      description: 'Ofrecemos todo lo que necesitas para grabar el videoclip y pegar el salto que tu carrera necesita.',
+      img: 'https://www.cck.gob.ar/wp-content/uploads/2021/08/musica-por-camara-backstage_WEB.jpg'
+    },
+    {
+      type: 'service',
+      name: 'Tecnica de sonido',
+      description: 'Ofrecemos servicio de tecnica en audio para tu evento',
+      img: 'https://cypes.grupoeurohispana.com/img/profesion/1015/recurso-principal-21314500.jpg'
+    },
+    {
+      type: 'service',
+      name: 'Servicios de grabacion de eventos en vivo',
+      description: 'Grabamos tu evento, tenemos las mejores camaras del mercado para ofrecerte una calidad de video y audio inigualable.',
+      img: 'https://hdstreaming.com.ar/wp-content/uploads/2020/04/tipos_eventos.jpg'
+    },
+    {
+      type: 'service',
+      name: 'Contratacion de artistas',
+      description: 'Te ofrecemos los mejores artistas para que tu evento sea el de tus sueños.',
+      img: 'https://upload.wikimedia.org/wikipedia/commons/0/00/El_Chaque%C3%B1o_Palavecino_en_los_festejos_por_la_Semana_de_Mayo_-_18008899731.jpg'
     },
     {
       type: 'equipment',
       name: 'Sony X30Pro',
-      description: ''
-    },
-    {
-      type: 'service',
-      name: 'Administracion de sonido',
-      description: ''
+      description: 'Mejor camara para video en la actualidad.',
+      img: 'https://pro.sony/s3/2022/03/04132113/e3f5c819-3492-4238-a339-c3d2d3fd3a2a-removebg.png'
     },
     {
       type: 'equipment',
-      name: 'Sony Hxr Nx5',
-      description: ''
+      name: 'Sony HDC-200',
+      description: 'Tecnologia 4K y audio de alta fidelización. Lista para ofrecer el mejor servicio.',
+      img: 'https://sp.sony-europe.com/da/3317/16092c592fa3afe18b88a4936bbde8e9.jpeg'
     },
   ],
   filtered: []
