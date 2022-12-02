@@ -8,9 +8,9 @@ function ArtistsPage() {
 
   return (
     <div className='artists-page-main'>
-        <ArtistsContainer/>
+        <ArtistsContainer />
     </div>
   )
-}
+};
 
-export default ArtistsPage
+export default ArtistsPage;
