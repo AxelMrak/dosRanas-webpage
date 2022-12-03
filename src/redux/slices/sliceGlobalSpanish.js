@@ -1,4 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 // ? Estado inicial que contiene dos arrays con los objetos clasificados por el tipo de objeto. Estos dos arrays se dividen en un idioma u otro.
 const initialState = {
   objectsSpanish: [
@@ -88,10 +88,16 @@ export const globalSpanishSlice = createSlice({
   name: 'globalSpanish',
   initialState,
   reducers: {
-    filter: (state, action) => {
-
+    filterSpanish: (state, action) => {
+      // Obtenemos los artistas del estado
+      const stateArr = current(state.objectsSpanish)
+      // Filtramos por nombre
+      let results = stateArr.filter(item => item.name.toLowerCase() === action.payload);
+      //    El resultado del filtro sera el estado que contiene los artistas filtrados por nombre
+      state.filtered = results;
     },
   },
 });
 
+export const { filterSpanish } = globalSpanishSlice.actions;
 export default globalSpanishSlice.reducer;

@@ -21,7 +21,8 @@ function ArtistsContainer() {
   //* Estados globales: Artistas y artistas filtrados y filtrados por idioma en estado global
   const globalEs = useSelector(state => state.globalSpanish.objectsSpanish);
   const globalEn = useSelector(state => state.globalEnglish.objectsEnglish);
-  const artistsFiltered = useSelector(state => state.artists.artistsFiltered);
+  const filteredEs = useSelector(state => state.globalSpanish.filtered);
+  const filteredEn = useSelector(state => state.globalEnglish.filtered);
 
   return (
     <div className='artists-section-container'>
@@ -33,18 +34,30 @@ function ArtistsContainer() {
         {/* Luego, si el lenguaje es spagnol se renderiza el estado global en ese idioma, y sino en ingles */}
         {/* Dentro de la iteracion de cada uno encontramos otra condicion que renderiza solo los artistas del estado global */}
         {
-          artistsFiltered > [] ?
-            artistsFiltered.map((artist, index) =>
-              <Artist index={index} key={artist.name} name={artist.name} img={artist.image} video={artist.url} />
-            )
-            :
-            i18n.language === 'es' ?
+          i18n.language === 'es' ?
+            filteredEs > [] ?
+              filteredEs.map((item, index) => item.type === 'artist' ?
+                <Artist index={index} key={item.name} name={item.name} img={item.image} video={item.url} />
+                :
+                null)
+              :
               globalEs.map((item, index) =>
-                item.type === 'artist' ? <Artist id={index} key={item.name} name={item.name} img={item.image} video={item.url} /> : null
+                item.type === 'artist' ? <Artist id={index} key={item.name} name={item.name} img={item.image} video={item.url} />
+                  :
+                  null
               )
+            :
+            filteredEn > [] ?
+              filteredEn.map((item, index) => item.type === 'artist' ?
+                <Artist index={index} key={item.name} name={item.name} img={item.image} video={item.url} />
+                :
+                null)
               :
               globalEn.map((item, index) =>
-                item.type === 'artist' ? <Artist id={index} key={item.name} name={item.name} img={item.image} video={item.url} /> : null
+                item.type === 'artist' ?
+                  <Artist id={index} key={item.name} name={item.name} img={item.image} video={item.url} />
+                  :
+                  null
               )
         }
       </div>

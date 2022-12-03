@@ -3,18 +3,27 @@
 /* FUENTES TIPOGRAFICAS */
 /* Tamaños */
 .equipment-unit-card {
+  width: 30%;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: #FFFFFF;
   color: #000000;
   padding: 1rem;
   margin: 1rem;
   border-radius: 25px;
+  row-gap: 1rem;
 }
 
 .equipment-unit-card h3 {
   font-family: "Source Sans Pro", serif;
+  font-size: 3rem;
+}
+
+.equipment-unit-card p {
+  font-family: "Nunito Sans", sans-serif;
   font-size: 1.5rem;
+  color: #000000;
 }/*# sourceMappingURL=EquipmentStyles.css.map */

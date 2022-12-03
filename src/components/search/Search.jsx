@@ -5,6 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { useDispatch, useSelector } from 'react-redux';
 // Importaciones de acciones de Redux
 import { filterArtists } from '../../redux/slices/sliceArtists';
+import { filterEnglish } from '../../redux/slices/sliceGlobalEnglish';
+import { filterSpanish } from '../../redux/slices/sliceGlobalSpanish';
 
 /**
  * ? Componente Search que se encarga de la busqueda de objetos globales
@@ -13,7 +15,7 @@ import { filterArtists } from '../../redux/slices/sliceArtists';
 function Search() {
 
   // Texto de traduccion
-  const { t } = useTranslation("global");
+  const { t, i18n } = useTranslation("global");
   // Estado que contiene lo escrito en el input de la barra de busqueda
   const [text, setText] = useState();
   // Dispatcher redux toolkit
@@ -36,10 +38,14 @@ function Search() {
      * ? Se encarga de evitar el comportamiento por default del formulario y despecha la accion para filtrar los objetos para la busqueda.
      * @param { Recibe el evento SUBMIT } e 
      */
-      onSubmit={(e) => {
+      onSubmit={ i18n.language === 'es' ? (e) => { 
         e.preventDefault()
-        dispatch(filterArtists(text))
-      }}>
+        dispatch(filterSpanish(text))
+       } : 
+       (e) => {
+        e.preventDefault()
+        dispatch(filterEnglish(text))
+       } }>
       {/* Toma el texto que va cambiando desde el input y lo pasa al estado
       @param {Recibe el evento ONCHANGE } e
       @returns Devuelve el estado mutado a traves de su manejador */}

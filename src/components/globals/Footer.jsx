@@ -9,16 +9,20 @@ import instagram from '../../assets/icons/instagram-logo.png';
 import email from '../../assets/icons/email-logo.png';
 // Importaciones de estilos
 import '../../styles/FooterStyles/FooterStyles.css';
+import { useTranslation } from 'react-i18next';
 
 /**
  * ? Componente Footer
  * @returns Devuelve el footer de la pagina
  */
 function Footer() {
+
+  const { t } = useTranslation("global");
+
   return (
     <footer className='foot'>
       <div className='social-media-container'>
-        <h3>Redes sociales</h3>
+        <h3>{ t("footer.social") }</h3>
         <div>
           <a href='https://www.youtube.com/@dosranasproductora4234' target='_blank'>
             <img src={youtube} width='70' alt='youtube-link' />
@@ -32,14 +36,14 @@ function Footer() {
           <a href='https://www.instagram.com/dosranas/' target='_blank'>
             <img src={instagram} width='70' alt='instagram-link' />
           </a>
-          {/* Falta correo de DosRanasProductora */}
+          {/* TODO: Falta correo de DosRanasProductora */}
           <a href='mailto:elcorreoquequieres@correo.com' target='_blank'>
             <img src={email} width='70' alt='email-link' />
           </a>
         </div>
       </div>
       <div className='logo-name-container'>
-        <h3>Dos Ranas Productora</h3>
+        <h3>{ t("footer.title") }</h3>
         <img src={logo} width='100' alt='logo Dos Ranas' />
       </div>
     </footer>

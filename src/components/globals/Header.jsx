@@ -1,7 +1,7 @@
 // Importaciones por defecto
 import React, { useState } from 'react';
 // Importaciones de dependencias
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useDispatch } from 'react-redux';
 import { resetArtists } from '../../redux/slices/sliceArtists';

@@ -2,18 +2,27 @@
 @import '../variables';
 
 .equipment-unit-card {
+  width: 30%;
+  height: 400px;
   display: flex;
   flex-direction:column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: $ColorTerciario;
   color: $ColorSecundario;
   padding: 1rem;
   margin: 1rem;
   border-radius: 25px;
+  row-gap: 1rem;
 }
 
 .equipment-unit-card h3 {
   font-family: $Subtitulo;
+  font-size: $SubtitleSize;
+}
+
+.equipment-unit-card p {
+  font-family: $Texto;
   font-size: $TextSize;
+  color: $ColorSecundario;
 }
