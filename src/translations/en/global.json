@@ -58,6 +58,11 @@
 		"quote": "Answer a few questions about your event and requirements, and one of the staff will contact you shortly.",
 		"buttonQuote": "Quote your event"
 	},
+	"results": {
+		"title": "Results",
+		"text": "This is what we have found",
+		"notFound": "Not founded"
+	},
 	"footer": {
 		"social": "Social Networks",
 		"title": "Dos Ranas Producer"

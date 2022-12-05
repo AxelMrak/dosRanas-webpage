@@ -15,7 +15,7 @@ function MainSection() {
   return (
     <main>
       <Slider/>
-      <GalleryArtists/>
+      <GalleryArtists />
     </main>
   )
 };

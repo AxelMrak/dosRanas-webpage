@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 import { ToastContainer } from 'react-toastify';
 // Importaciones de estilos
 import './styles/AppStyles/App.css';
+import ResultsPage from './pages/Results/ResultsPage';
 
 /*
  ? Componente principal de la aplicacion
@@ -40,6 +41,8 @@ function App() {
           <Route path="/staff" element={<h2>Pendiente</h2>} />
           {/* Contacto */}
           <Route path='/contacto' element={<h2>Pendiente</h2>} />
+          {/* Resultados de la busqueda */}
+          <Route path='/resultados' element={<ResultsPage/>}/>
           {/* 404 */}
           <Route path="*" element={<h1>404: Not Found</h1>} />
         </Routes>

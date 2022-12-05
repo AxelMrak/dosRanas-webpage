@@ -57,6 +57,11 @@
 		"quote": "Responda unas preguntas sobre su evento y requerimientos, y una persona del staff se comunicará con usted.",
 		"buttonQuote": "Cotiza tu evento"
 	},
+	"results": {
+		"title": "Resultados",
+		"text": "Esto es lo que hemos encontrado",
+		"notFound": "Sin resultados"
+	},
 	"footer": {
 		"social": "Redes Sociales",
 		"title": "Dos Ranas Productora"

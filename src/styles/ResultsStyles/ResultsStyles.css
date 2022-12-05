@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* PALETA DE COLORES */
+/* FUENTES TIPOGRAFICAS */
+/* Tamaños */
+.results-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 2rem;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.results-section h2 {
+  font-family: "Source Sans Pro", serif;
+  font-size: 3rem;
+}
+
+.results-section p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=ResultsStyles.css.map */

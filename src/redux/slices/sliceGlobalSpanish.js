@@ -92,10 +92,11 @@ export const globalSpanishSlice = createSlice({
       // Obtenemos los artistas del estado
       const stateArr = current(state.objectsSpanish)
       // Filtramos por nombre
-      let results = stateArr.filter(item => item.name.toLowerCase() === action.payload);
+      let results = stateArr.filter(item => item.name.toLowerCase().includes(action.payload));
       //    El resultado del filtro sera el estado que contiene los artistas filtrados por nombre
       state.filtered = results;
     },
+    
   },
 });
 
